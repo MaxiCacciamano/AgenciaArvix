@@ -1,0 +1,71 @@
+.hero {
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  border-bottom: 1px solid var(--brand-border);
+  overflow: hidden;
+}
+
+.heroTag {
+  color: var(--brand-lime);
+  font-size: 10px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.heroTitle {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: clamp(3.5rem, 10vw, 8rem);
+  line-height: 0.85;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+  margin-bottom: 3rem;
+}
+
+.italic {
+  font-style: italic;
+  color: var(--brand-lime);
+}
+
+.heroFooter {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.heroDesc {
+  font-size: 1.25rem;
+  color: #9ca3af;
+  font-weight: 300;
+  max-width: 40rem;
+  line-height: 1.6;
+}
+
+.filterGroup {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.filterBtn {
+  padding: 0.5rem 1rem;
+  font-size: 9px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  background: transparent;
+  border: 1px solid var(--brand-border);
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.filterBtnActive {
+  background: var(--brand-lime);
+  color: black;
+  border-color: var(--brand-lime);
+}
