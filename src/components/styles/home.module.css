@@ -2,7 +2,7 @@
   position: relative;
   padding-top: 10rem;
   padding-bottom: 5rem;
-  border-bottom: 1px solid var(--brand-border);
+  -bottom: 1px solid var(--brand-);
   overflow: hidden;
 }
 
@@ -58,7 +58,7 @@
   text-transform: uppercase;
   letter-spacing: 0.2em;
   background: transparent;
-  border: 1px solid var(--brand-border);
+  : 1px solid var(--brand-);
   color: #9ca3af;
   cursor: pointer;
   transition: all 0.3s;
@@ -67,5 +67,5 @@
 .filterBtnActive {
   background: var(--brand-lime);
   color: black;
-  border-color: var(--brand-lime);
+  -color: var(--brand-lime);
 }

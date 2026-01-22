@@ -1,68 +1,23 @@
-@import "tailwindcss";
-
-@theme {
-  /* Tus colores personalizados de la v3 ahora van aquí */
-  --color-brand-black: #050505;
-  --color-brand-dark: #0a0a0a;
-  --color-brand-gray: #111111;
-  --color-brand-border: #222222;
-  --color-brand-lime: #ccff00;
-  --color-brand-white: #ffffff;
-
-  --font-display: "Space Grotesk", sans-serif;
-}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 @layer base {
-  html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: hidden;
-    background-color: #050505; /* Tu color brand-black */
+  html {
+    font-size: 16px;
+  }
+
+  body {
+    font-family: Inter, system-ui, sans-serif;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
   }
 }
 
-@import "tailwindcss";
-
-@theme {
-  --font-display: "Space Grotesk", sans-serif;
-}
-
-:root {
-  background-color: #050505;
-  color: #ffffff;
-}
-
-.noise-overlay {
-  position: fixed;
-  inset: 0;
-  width: 100vw;
-  height: 100vh;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 50;
-}
-
-/* Para el texto gigante que se sale de la pantalla */
-.text-outline {
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
-  color: transparent;
-  white-space: nowrap;
-}
-
-.text-outline {
-  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
-  color: transparent;
-}
-
-.bento-card {
-  background: linear-gradient(145deg, #0a0a0a 0%, #050505 100%);
-  border: 1px solid #222;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.bento-card:hover {
-  border-color: #CCFF00;
-  transform: translateY(-5px);
-  box-shadow: 0 10px 30px -10px rgba(204, 255, 0, 0.1);
+@layer utilities {
+  .text-stroke {
+    -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+    color: transparent;
+  }
 }

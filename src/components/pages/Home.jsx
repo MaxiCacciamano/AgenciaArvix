@@ -1,6 +1,6 @@
 import React from 'react';
-import { Menu } from '../Menu';
-import { Footer } from '../Footer';
+import { Menu } from '../Menu.jsx';
+import { Footer } from '../Footer.jsx';
 
 
 export default function Home() {
@@ -10,15 +10,15 @@ export default function Home() {
       <div className="noise-overlay"></div>
       <Menu/>
 
+     <header className="relative min-h-screen pt-24 overflow-hidden border-b border-brand-border grid-bg">
+  <div className="max-w-[2100px] mx-auto px-6 md:px-12 xl:px-20">
+    <div className="max-w-[900px]">
 
-      <header className="relative min-h-screen flex items-center pt-24 overflow-hidden border-b border-brand-border grid-bg">
-          <div className="container mx-auto px-6 relative z-10">
-              <div className="max-w-5xl">
                   <div className="inline-flex items-center gap-2 border border-brand-lime/30 bg-brand-lime/5 px-4 py-1.5 mb-10 rounded-full">
                       <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.2em]">Ecommerce de Alto Rendimiento</span>
                   </div>
 
-                  <h1 className="font-display font-bold text-5xl md:text-8xl lg:text-9xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
+                  <h1 className="font-display font-bold text-5xl md:text-8xl lg:text-9xl leading-[0.9] tracking-tighter uppercase">
                       No creamos webs.<br/>Diseñamos <span className="text-brand-lime">ventas.</span>
                   </h1>
 
@@ -55,7 +55,7 @@ export default function Home() {
 
 
           <div className="absolute bottom-0 w-full border-t border-brand-border py-6 bg-brand-black/80 backdrop-blur-sm">
-              <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+              <div className="max-w-[2000px] mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
                   <div className="flex items-center gap-6 opacity-30 grayscale contrast-125">
                       <span className="font-display font-black text-xl italic tracking-tighter">TECHCORP</span>
                       <span className="font-display font-black text-xl italic tracking-tighter">MODA.BA</span>
@@ -76,10 +76,10 @@ export default function Home() {
 
 
       <section className="py-32 bg-brand-black border-b border-brand-border relative z-10">
-          <div className="container mx-auto px-6">
-              <div className="max-w-4xl mx-auto text-center mb-24">
+          <div className="max-w-[2000px] mx-auto px-16">
+              <div className="max-w-[1600px] mx-auto text-center mb-24 py-10">
                   <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">Diagnóstico de Mercado</span>
-                  <h2 className="font-display text-4xl md:text-6xl font-bold uppercase text-white mb-8 leading-tight">
+                  <h2 className="font-display text-4xl md:text-8xl font-bold uppercase text-white mb-8 leading-tight">
                       Tu sitio actual es una <span className="text-stroke text-white opacity-40">hoja en blanco</span> en un mar de ruido.
                   </h2>
               </div>
@@ -106,22 +106,22 @@ export default function Home() {
 
 
       <section id="solucion" className="py-32 bg-brand-gray/20 border-b border-brand-border relative z-10 overflow-hidden">
-          <div className="container mx-auto px-6">
+          <div className="max-w-[2000px] mx-auto px-6">
               <div className="flex flex-col lg:flex-row gap-20 items-center">
                   <div className="lg:w-1/2">
-                      <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">La Solución</span>
-                      <h2 className="font-display text-5xl md:text-7xl font-bold uppercase text-white mb-10 leading-none">
+                      <span className="text-brand-lime text-[20px] font-black uppercase tracking-[0.3em] mb-6 block">La Solución</span>
+                      <h2 className="font-display text-5xl md:text-9xl font-bold uppercase text-white mb-10 leading-none">
                           Ingeniería<br/>Comercial.
                       </h2>
-                      <p className="text-xl text-gray-400 mb-10 leading-relaxed">
+                      <p className="text-3xl text-gray-400 mb-10 leading-relaxed">
                           No somos artistas, somos arquitectos de ventas. Aplicamos un <span className="text-white font-bold">Método Riguroso</span> basado en datos, no en opiniones. Investigamos a 5 competidores clave antes de escribir una sola línea de código.
                       </p>
                       <ul className="space-y-6">
                           <li className="flex items-start gap-4">
                               <div className="mt-1 bg-brand-lime p-1 rounded-sm"><i data-lucide="check" className="w-3 h-3 text-black"></i></div>
                               <div>
-                                  <span className="block text-white font-bold uppercase text-xs tracking-wider">Benchmark Competitivo</span>
-                                  <p className="text-gray-500 text-sm">Entendemos qué hacen bien (y mal) los líderes de tu nicho.</p>
+                                  <span className="block text-1.5xl text-white font-bold uppercase tracking-wider">Benchmark Competitivo</span>
+                                  <p className="text-gray-500 text-2xl">Entendemos qué hacen bien (y mal) los líderes de tu nicho.</p>
                               </div>
                           </li>
                           <li className="flex items-start gap-4">
@@ -154,7 +154,7 @@ export default function Home() {
 
 
       <section className="py-32 bg-brand-black border-b border-brand-border">
-          <div className="container mx-auto px-6">
+          <div className="max-w-[2000px] mx-auto px-6">
               <h2 className="font-display text-4xl font-bold text-white uppercase mb-20">Anatomía de tu nueva Web</h2>
 
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border border-brand-border">
@@ -200,7 +200,7 @@ export default function Home() {
 
 
       <section className="py-32 bg-brand-gray/10 relative z-10">
-          <div className="container mx-auto px-6">
+          <div className="max-w-[2000px] mx-auto px-6">
               <div className="grid md:grid-cols-2 gap-12">
                   <div className="p-12 border border-brand-border bg-brand-black">
                       <h3 className="font-display text-2xl font-bold text-brand-lime uppercase mb-8">Sí es para vos si...</h3>
@@ -242,7 +242,7 @@ export default function Home() {
 
 
       <section id="proceso" className="py-32 bg-brand-black border-y border-brand-border relative z-10">
-          <div className="container mx-auto px-6">
+          <div className="max-w-[2000px] mx-auto px-6">
               <div className="mb-24">
                   <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-4 block">El Método</span>
                   <h2 className="font-display text-4xl md:text-6xl font-bold text-white uppercase">Siete pasos al Éxito</h2>
@@ -283,7 +283,7 @@ export default function Home() {
 
 
       <section className="py-32 bg-brand-gray/30">
-          <div className="container mx-auto px-6">
+          <div className="max-w-[2000px] mx-auto px-6">
               <h2 className="font-display text-3xl font-bold text-white uppercase mb-16">Pasos Posteriores <span className="text-gray-600 block text-lg font-sans normal-case mt-2">Potenciá tu activo una vez lanzado</span></h2>
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                   <div className="p-8 bg-brand-black border border-brand-border">
@@ -306,8 +306,9 @@ export default function Home() {
           </div>
       </section>
 
+
       <section id="paquete" className="py-32 bg-brand-lime text-black relative z-10 overflow-hidden">
-          <div className="container mx-auto px-6">
+          <div className="max-w-[2100px] mx-auto px-6">
               <div className="bg-black text-white p-12 md:p-20 relative overflow-hidden">
                   <div className="absolute top-0 right-0 p-8">
                       <i data-lucide="sparkles" className="w-12 h-12 text-brand-lime opacity-20"></i>
@@ -347,7 +348,7 @@ export default function Home() {
 
 
       <section id="contacto" className="py-32 bg-brand-black relative grid-bg">
-          <div className="container mx-auto px-6 text-center">
+          <div className="max-w-[2000px] mx-auto px-6 text-center">
               <h2 className="font-display text-5xl md:text-9xl font-bold text-white uppercase mb-10 tracking-tighter leading-[0.8]">
                   Hagamos un <br/><span className="text-brand-lime">Upgrade.</span>
               </h2>
@@ -365,6 +366,8 @@ export default function Home() {
               </div>
           </div>
       </section>
+
+
       <Footer />
   </div>
 
