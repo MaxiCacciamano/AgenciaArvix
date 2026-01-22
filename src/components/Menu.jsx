@@ -5,12 +5,10 @@ import { Link } from 'react-router-dom'
 export const Menu = () => {
   return (
     <>
-
-
-      <nav className="fixed top-0 w-full z-[100] bg-brand-black/90 backdrop-blur-xl">
-          <div className="w-full h-20 flex justify-between items-center">
+      <nav className="fixed top-0 w-full z-[100] bg-brand-black/90 backdrop-blur-xl border-b border-brand-border">
+          <div className="container mx-auto px-6 h-20 flex justify-between items-center">
               <div className="font-display font-bold text-2xl tracking-tighter uppercase">
-                  ARVIX<span className="text-brand-lime">.</span>
+                  AGENCIA<span className="text-brand-lime">.</span>
               </div>
               <div className="hidden lg:flex gap-10 text-[10px] font-bold uppercase tracking-[0.2em] text-gray-400">
                   <a href="#solucion" className="hover:text-brand-lime transition-colors">Método</a>
