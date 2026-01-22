@@ -2,3 +2,29 @@
   -webkit-text-stroke: 1px rgba(255, 255, 255, 0.1);
   color: transparent;
 }
+
+
+.menu-item {
+  cursor: pointer;
+  padding: 10px;
+  background: #222;
+  color: white;
+}
+
+/* 🔴 Submenú completamente oculto */
+.submenu {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  background: #444;
+}
+
+/* 🟢 Submenú visible */
+.submenu.open {
+  max-height: 500px; /* Debe ser mayor al contenido */
+}
+
+.submenu-item {
+  padding: 10px;
+  color: white;
+}
