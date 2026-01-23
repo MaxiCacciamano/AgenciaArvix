@@ -10,7 +10,7 @@ export const Menu = () => {
 
         <div className="font-display font-bold text-2xl tracking-tighter uppercase">
           <Link to="/">
-          AGENCIA<span className="text-brand-lime">.</span>
+          ARVIX<span className="text-brand-lime">.</span>
           </Link>
         </div>
 
@@ -35,7 +35,7 @@ export const Menu = () => {
             >
               <a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">Ecommerce</a>
               <Link to="/Seo"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">SEO</a></Link>
-              <Link to="SEM"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">SEM</a></Link>
+              <Link to="/SEM"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">SEM</a></Link>
               <Link to="/Marketing-Investigación"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">Investigación de mercado</a></Link>
             </div>
           </div>
@@ -47,9 +47,11 @@ export const Menu = () => {
           <Link to="/Contacto"><a href="#paquete" className="hover:text-brand-lime transition-colors cursor-pointer">Contacto</a></Link>
         </div>
 
+        <Link to="/Contacto">
         <a className="bg-brand-lime text-black px-6 py-2.5 text-[10px] font-black uppercase">
           Solicitar Diagnóstico
         </a>
+        </Link>
 
       </div>
     </nav>

@@ -6,6 +6,7 @@ import {
   Target,
   Zap,
   Users,
+  BarChart3,
   Mail
 } from 'lucide-react'
 
@@ -76,7 +77,7 @@ export const Mercado = () => {
                     <div class="data-card p-8 group relative overflow-hidden">
                         <div class="relative z-10">
                             <div class="w-12 h-12 bg-brand-gray border border-brand-border flex items-center justify-center mb-6 group-hover:bg-brand-lime group-hover:text-black transition-all">
-                                <i data-lucide="target" class="w-6 h-6"></i>
+                                <Target size={24} class="w-6 h-6"/>
                             </div>
                             <h3 class="text-xl font-display font-bold uppercase text-white mb-4">Ingeniería Inversa <br/>de Contenidos</h3>
                             <p class="text-gray-500 text-xs leading-relaxed mb-6">
@@ -91,7 +92,8 @@ export const Mercado = () => {
                     <div class="data-card p-8 group relative overflow-hidden">
                         <div class="relative z-10">
                             <div class="w-12 h-12 bg-brand-gray border border-brand-border flex items-center justify-center mb-6 group-hover:bg-brand-lime group-hover:text-black transition-all">
-                                <i data-lucide="zap" class="w-6 h-6"></i>
+                                <Zap class="w-6 h-6"/>
+
                             </div>
                             <h3 class="text-xl font-display font-bold uppercase text-white mb-4">Detección de <br/>Brechas de Mercado</h3>
                             <p class="text-gray-500 text-xs leading-relaxed mb-6">
@@ -105,7 +107,7 @@ export const Mercado = () => {
 
                     <div class="data-card p-8 group">
                         <div class="w-12 h-12 bg-brand-gray border border-brand-border flex items-center justify-center mb-6 group-hover:bg-brand-lime group-hover:text-black transition-all">
-                            <i data-lucide="bar-chart-3" class="w-6 h-6"></i>
+                            <BarChart3 class="w-6 h-6"/>
                         </div>
                         <h3 class="text-xl font-display font-bold uppercase text-white mb-4">Análisis de <br/>Autoridad Competitiva</h3>
                         <p class="text-gray-500 text-xs leading-relaxed mb-6">
@@ -116,7 +118,7 @@ export const Mercado = () => {
 
                     <div class="data-card p-8 group">
                         <div class="w-12 h-12 bg-brand-gray border border-brand-border flex items-center justify-center mb-6 group-hover:bg-brand-lime group-hover:text-black transition-all">
-                            <i data-lucide="users" class="w-6 h-6"></i>
+                            <Users class="w-6 h-6"/>
                         </div>
                         <h3 class="text-xl font-display font-bold uppercase text-white mb-4">Inteligencia de <br/>Audiencia</h3>
                         <p class="text-gray-500 text-xs leading-relaxed mb-6">

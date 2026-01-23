@@ -10,7 +10,7 @@ export const Nosotros = () => {
 
     <Menu />
 
-    <header class="relative min-h-[80vh] flex items-center border-b border-brand-border overflow-hidden">
+    <header class="py-16 relative min-h-[80vh] flex items-center border-b border-brand-border overflow-hidden">
         <div class="absolute inset-0 z-0">
             <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop" 
                  alt="Equipo trabajando en estrategia de ventas" 

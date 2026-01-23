@@ -1,8 +1,28 @@
 import React from 'react'
 import { Menu } from '../Menu'
 import { Footer } from '../Footer'
+import emailjs from 'emailjs-com'
 
 export const Contacto = () => {
+
+    const sendEmail = (e) => {
+  e.preventDefault()
+
+  emailjs.sendForm(
+    'SERVICE_ID',
+    'TEMPLATE_ID',
+    e.target,
+    'PUBLIC_KEY'
+  )
+  .then(() => {
+    alert('Mensaje enviado correctamente')
+  })
+  .catch(() => {
+    alert('Error al enviar el mensaje')
+  })
+}
+
+
   return (
      <div className="relative w-full min-h-screen bg-brand-black text-brand-white antialiased selection:bg-brand-lime selection:text-black overflow-x-hidden font-sans">
     
@@ -30,7 +50,7 @@ export const Contacto = () => {
                         </span>
                         
                         <h1 className="font-display font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl leading-[0.9] uppercase tracking-tighter mb-10">
-                            Hablemos de su<br/><span className="italic text-brand-lime">Crecimiento.</span>
+                            Hablemos de tu<br/><span className="italic text-brand-lime">Crecimiento.</span>
                         </h1>
                         
                         <p className="text-lg md:text-xl text-gray-400 font-light leading-relaxed mb-16">
@@ -45,7 +65,8 @@ export const Contacto = () => {
                                 </div>
                                 <div>
                                     <span className="block text-[10px] font-black uppercase tracking-widest text-gray-600 mb-1">Consultas Directas</span>
-                                    <a href="mailto:intelligence@agencia.com" className="font-display text-xl font-semibold hover:text-brand-lime transition-colors">intelligence@agencia.com</a>
+                                    <a href="#"className="font-display text-xl font-semibold hover:text-brand-lime transition-colors">+549 353 2679392<br/></a>
+                                    <a href="mailto:consultas@agenciaarvix.com" className="font-display text-xl font-semibold hover:text-brand-lime transition-colors">consultas@agenciaarvix.com</a>
                                 </div>
                             </div>
 
@@ -55,7 +76,13 @@ export const Contacto = () => {
                                 </div>
                                 <div>
                                     <span className="block text-[10px] font-black uppercase tracking-widest text-gray-600 mb-1">Sede Operativa</span>
-                                    <span className="font-display text-xl font-semibold">Distrito Tecnológico<br/>Buenos Aires, AR.</span>
+                                    <span className="font-display text-xl font-semibold">Nueva cordoba<br/>Córdoba capital, ARGENTINA.</span>
+                                </div>
+                            </div>
+
+                            <div className="flex items-start gap-6">
+                                <div className="mt-1 text-brand-lime">
+                                    <i data-lucide="map-pin" className="w-6 h-6"></i>
                                 </div>
                             </div>
                         </div>
@@ -83,26 +110,26 @@ export const Contacto = () => {
                             <i data-lucide="shield-check" className="w-16 h-16"></i>
                         </div>
 
-                        <form id="contactForm" className="space-y-10">
+                        <form onSubmit={sendEmail} className="space-y-10">
                             <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
                                 
 
                                 <div className="relative group">
                                     <label className="block text-[10px] font-black uppercase tracking-widest text-gray-500 mb-2 transition-colors group-focus-within:text-brand-lime">Nombre y Apellido</label>
-                                    <input type="text" required placeholder="Ej. Juan Pérez"
+                                    <input type="text" name="name" required placeholder="Ej. Juan Pérez"
                                         className="w-full bg-transparent border-b border-brand-border py-3 text-white focus:outline-none focus:border-brand-lime transition-all placeholder:text-gray-800"/>
                                 </div>
 
                                 <div className="relative group">
                                     <label className="block text-[10px] font-black uppercase tracking-widest text-gray-500 mb-2 transition-colors group-focus-within:text-brand-lime">Email Corporativo</label>
-                                    <input type="email" required placeholder="jperez@empresa.com"
+                                    <input type="email" name="email" required placeholder="jperez@empresa.com"
                                         className="w-full bg-transparent border-b border-brand-border py-3 text-white focus:outline-none focus:border-brand-lime transition-all placeholder:text-gray-800"/>
                                 </div>
 
 
                                 <div className="relative group">
                                     <label className="block text-[10px] font-black uppercase tracking-widest text-gray-500 mb-2 transition-colors group-focus-within:text-brand-lime">Empresa</label>
-                                    <input type="text" placeholder="Nombre de su organización"
+                                    <input type="text" name="empresa" placeholder="Nombre de su organización"
                                         className="w-full bg-transparent border-b border-brand-border py-3 text-white focus:outline-none focus:border-brand-lime transition-all placeholder:text-gray-800"/>
                                 </div>
 
@@ -111,6 +138,8 @@ export const Contacto = () => {
                                     <label className="block text-[10px] font-black uppercase tracking-widest text-gray-500 mb-2 transition-colors group-focus-within:text-brand-lime">Área de Interés</label>
                                     <div className="relative">
                                         <select className="w-full bg-transparent border-b border-brand-border py-3 text-white focus:outline-none focus:border-brand-lime transition-all cursor-pointer">
+                                            <option className="bg-brand-black" value="seo">Ecommerce</option>
+                                            <option className="bg-brand-black" value="seo">Pagina web estrategica</option>
                                             <option className="bg-brand-black" value="seo">SEO Técnico y Semántico</option>
                                             <option className="bg-brand-black" value="b2b">Adquisición B2B SaaS</option>
                                             <option className="bg-brand-black" value="audit">Auditoría de Search Intelligence</option>
