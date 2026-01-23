@@ -2,6 +2,9 @@ import React from 'react'
 import { Menu } from '../Menu'
 import { Footer } from '../Footer'
 
+import { Target, Zap, Database, ChevronRight } from "lucide-react";
+
+
 export const Sem = () => {
   return (
     <div className="bg-brand-black text-brand-white antialiased font-sans">
@@ -67,41 +70,86 @@ export const Sem = () => {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-0 border border-brand-border">
 
-                <div className="p-10 border-b md:border-b-0 md:border-r border-brand-border transition-all hover:bg-zinc-950 group">
-                    <div className="text-brand-lime mb-8 group-hover:scale-110 transition-transform origin-left">
-                        <i data-lucide="target" className="w-10 h-10"></i>
-                    </div>
-                    <h3 className="text-xl font-display font-bold uppercase mb-4 tracking-tight">SEM de Alta Precisión</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed mb-8">Estrategias de búsqueda en Google/Bing basadas en intención de compra real. No compramos palabras, compramos mercados.</p>
-                    <ul className="space-y-3 text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-brand-lime"></div> Auditoría de Keyword Gap</li>
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-brand-lime"></div> Gestión de Bidding Avanzado</li>
-                    </ul>
-                </div>
+<div className="p-10 border-b md:border-b-0 md:border-r border-brand-border transition-all hover:bg-zinc-950 group">
+  <div className="text-brand-lime mb-8 group-hover:scale-110 transition-transform origin-left">
+    <Target className="w-10 h-10" />
+  </div>
 
-                <div className="p-10 border-b md:border-b-0 md:border-r border-brand-border transition-all hover:bg-zinc-950 group">
-                    <div className="text-brand-lime mb-8 group-hover:scale-110 transition-transform origin-left">
-                        <i data-lucide="zap" className="w-10 h-10"></i>
-                    </div>
-                    <h3 className="text-xl font-display font-bold uppercase mb-4 tracking-tight">Ecosistemas de Conversión</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed mb-8">La pauta es solo el 50%. El otro 50% es donde aterrizan. Diseñamos páginas que fuerzan la acción del usuario.</p>
-                    <ul className="space-y-3 text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-brand-lime"></div> CRO & Testeo A/B Constante</li>
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-brand-lime"></div> UX enfocada a Lead Gen</li>
-                    </ul>
-                </div>
+  <h3 className="text-xl font-display font-bold uppercase mb-4 tracking-tight">
+    SEM de Alta Precisión
+  </h3>
 
-                <div className="p-10 transition-all hover:bg-zinc-950 group">
-                    <div className="text-brand-lime mb-8 group-hover:scale-110 transition-transform origin-left">
-                        <i data-lucide="database" className="w-10 h-10"></i>
-                    </div>
-                    <h3 className="text-xl font-display font-bold uppercase mb-4 tracking-tight">Análisis de Atribución</h3>
-                    <p className="text-gray-400 text-sm leading-relaxed mb-8">Modelos de datos para entender qué peso tiene cada dólar invertido en el customer journey completo.</p>
-                    <ul className="space-y-3 text-[10px] font-bold uppercase tracking-widest text-gray-500">
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-brand-lime"></div> Tracking Multi-Canal</li>
-                        <li className="flex items-center gap-2"><div className="w-1.5 h-1.5 bg-brand-lime"></div> Dashboards de Profit Real</li>
-                    </ul>
-                </div>
+  <p className="text-gray-400 text-sm leading-relaxed mb-8">
+    Estrategias de búsqueda en Google/Bing basadas en intención de compra real.
+    No compramos palabras, compramos mercados.
+  </p>
+
+  <ul className="space-y-3 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+    <li className="flex items-center gap-2">
+      <div className="w-1.5 h-1.5 bg-brand-lime"></div>
+      Auditoría de Keyword Gap
+    </li>
+    <li className="flex items-center gap-2">
+      <div className="w-1.5 h-1.5 bg-brand-lime"></div>
+      Gestión de Bidding Avanzado
+    </li>
+  </ul>
+</div>
+
+
+<div className="p-10 border-b md:border-b-0 md:border-r border-brand-border transition-all hover:bg-zinc-950 group">
+  <div className="text-brand-lime mb-8 group-hover:scale-110 transition-transform origin-left">
+    <Zap className="w-10 h-10" />
+  </div>
+
+  <h3 className="text-xl font-display font-bold uppercase mb-4 tracking-tight">
+    Ecosistemas de Conversión
+  </h3>
+
+  <p className="text-gray-400 text-sm leading-relaxed mb-8">
+    La pauta es solo el 50%. El otro 50% es donde aterrizan.
+    Diseñamos páginas que fuerzan la acción del usuario.
+  </p>
+
+  <ul className="space-y-3 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+    <li className="flex items-center gap-2">
+      <div className="w-1.5 h-1.5 bg-brand-lime"></div>
+      CRO & Testeo A/B Constante
+    </li>
+    <li className="flex items-center gap-2">
+      <div className="w-1.5 h-1.5 bg-brand-lime"></div>
+      UX enfocada a Lead Gen
+    </li>
+  </ul>
+</div>
+
+
+<div className="p-10 transition-all hover:bg-zinc-950 group">
+  <div className="text-brand-lime mb-8 group-hover:scale-110 transition-transform origin-left">
+    <Database className="w-10 h-10" />
+  </div>
+
+  <h3 className="text-xl font-display font-bold uppercase mb-4 tracking-tight">
+    Análisis de Atribución
+  </h3>
+
+  <p className="text-gray-400 text-sm leading-relaxed mb-8">
+    Modelos de datos para entender qué peso tiene cada dólar invertido
+    en el customer journey completo.
+  </p>
+
+  <ul className="space-y-3 text-[10px] font-bold uppercase tracking-widest text-gray-500">
+    <li className="flex items-center gap-2">
+      <div className="w-1.5 h-1.5 bg-brand-lime"></div>
+      Tracking Multi-Canal
+    </li>
+    <li className="flex items-center gap-2">
+      <div className="w-1.5 h-1.5 bg-brand-lime"></div>
+      Dashboards de Profit Real
+    </li>
+  </ul>
+</div>
+
             </div>
         </div>
     </section>
@@ -176,8 +224,8 @@ export const Sem = () => {
 
     <section id="cta" className="py-32 relative overflow-hidden">
         <div className="container mx-auto px-6 text-center relative z-10">
-            <h2 className="text-5xl md:text-7xl font-display font-bold uppercase tracking-tighter mb-8">
-                ¿Su pauta es una <br/>inversión o un <span className="text-outline">gasto?</span>
+            <h2 class="font-display font-bold text-5xl md:text-7xl lg:text-8xl leading-[0.9] text-white tracking-tighter uppercase mb-10">
+                     ¿Su pauta es una <br/>inversión o un <span class="italic text-brand-lime">gasto?</span>
             </h2>
             <p className="text-gray-400 max-w-2xl mx-auto mb-12 text-lg">
                 No aceptamos a todos los clientes. Solo trabajamos con marcas listas para escalar su facturación mediante ingeniería de datos y performance agresiva.
@@ -185,7 +233,7 @@ export const Sem = () => {
             <div className="flex flex-col items-center gap-6">
                 <button className="bg-brand-lime text-black px-12 py-6 font-black uppercase text-sm tracking-widest hover:scale-105 transition-transform flex items-center gap-3">
                     Agendar Consultoría Estratégica
-                    <i data-lucide="chevron-right" className="w-5 h-5"></i>
+                    <ChevronRight className="w-5 h-5" />
                 </button>
                 <span className="text-[10px] text-gray-600 uppercase font-mono tracking-widest italic">Cupos limitados para el Q1 2024</span>
             </div>

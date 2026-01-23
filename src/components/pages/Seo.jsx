@@ -1,6 +1,10 @@
 import React from 'react'
 import { Menu } from '../Menu'
 import { Footer } from '../Footer'
+import {
+    ShieldCheck,
+    ArrowUpRight
+} from 'lucide-react'
 
 export const Seo = () => {
   return (
@@ -82,7 +86,7 @@ export const Seo = () => {
                 <div className="md:col-span-3 bento-card p-8 group">
                     <div className="flex justify-between items-start mb-8">
                         <span className="text-[10px] font-black uppercase tracking-widest text-gray-400">Core Web Vitals</span>
-                        <i data-lucide="shield-check" className="w-5 h-5 text-brand-lime"></i>
+                        <ShieldCheck className="w-5 h-5 text-brand-lime" />
                     </div>
                     <div className="grid grid-cols-3 gap-4 mb-8">
                         <div className="text-center">
@@ -152,7 +156,7 @@ export const Seo = () => {
                             Digitalización del sistema de tracking y portal B2B para una flota de 500+ camiones. Reducción de tiempos operativos en un 35%.
                         </p>
                         <a href="#" className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors">
-                            Detalles Técnicos <i data-lucide="arrow-up-right" className="w-4 h-4"></i>
+                            Detalles Técnicos <ArrowUpRight className="w-4 h-4" />
                         </a>
                     </div>
                 </div>
@@ -176,7 +180,7 @@ export const Seo = () => {
                             Plataforma de gestión de carteras e informes automatizados para inversores institucionales. Seguridad de grado bancario con UX simplificada.
                         </p>
                         <a href="#" className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors">
-                            Detalles Técnicos <i data-lucide="arrow-up-right" className="w-4 h-4"></i>
+                            Detalles  <ArrowUpRight className="w-4 h-4" />
                         </a>
                     </div>
                 </div>

@@ -6,7 +6,8 @@ export const Footer = () => {
           <div className="container mx-auto px-6 py-10">
               <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
                   <div className="max-w-sm">
-                      <div Name="font-display font-bold text-3xl tracking-tighter uppercase text-white mb-6">
+                      <div className="font-display font-bold text-xl tracking-tighter uppercase text-white mb-6">
+                        {/* "font-display font-bold text-xl uppercase text-white" */}
                           ARVIX<span className="text-brand-lime">.</span>
                       </div>
                       <p className="text-gray-600 text-sm leading-relaxed">

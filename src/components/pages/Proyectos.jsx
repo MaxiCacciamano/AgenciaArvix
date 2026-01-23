@@ -54,7 +54,8 @@ export const Proyectos = () => {
                             Digitalización del sistema de tracking y portal B2B para una flota de 500+ camiones. Reducción de tiempos operativos en un 35%.
                         </p>
                         <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors">
-                            Detalles Técnicos <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            {/* Detalles Técnicos <i data-lucide="arrow-up-right" class="w-4 h-4"></i> */}
+                            <ArrowUpRight class="w-4 h-4" />
                         </a>
                     </div>
                 </div>
@@ -78,7 +79,7 @@ export const Proyectos = () => {
                             Plataforma de gestión de carteras e informes automatizados para inversores institucionales. Seguridad de grado bancario con UX simplificada.
                         </p>
                         <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors">
-                            Detalles Técnicos <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            Detalles Técnicos <ArrowUpRight class="w-4 h-4" />
                         </a>
                     </div>
                 </div>
