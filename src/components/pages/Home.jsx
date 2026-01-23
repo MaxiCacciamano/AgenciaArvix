@@ -1,6 +1,11 @@
 import React from 'react';
 import { Menu } from '../Menu.jsx';
 import { Footer } from '../Footer.jsx';
+import { Link } from 'react-router-dom';
+
+import {
+  Mail
+} from 'lucide-react'
 
 
 export default function Home() {
@@ -12,7 +17,7 @@ export default function Home() {
 
 
      <header className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden border-b border-brand-border grid-bg">
-          <div className="container mx-auto px-6 relative z-10">
+          <div className="py-5 container mx-auto px-6 relative z-10">
               <div className="max-w-5xl">
                   <div className="inline-flex items-center gap-2 border border-brand-lime/30 bg-brand-lime/5 px-4 py-1.5 mb-10 rounded-full">
                       <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.2em]">Ecommerce de Alto Rendimiento</span>
@@ -29,7 +34,10 @@ export default function Home() {
                           </p>
 
                           <div className="flex flex-col sm:flex-row gap-4 mb-16">
-                              <a href="#contacto" className="bg-brand-lime text-black px-10 py-5 font-black uppercase tracking-widest text-sm hover:translate-y-[-4px] transition-all shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)] flex items-center justify-center gap-3">
+                              <a
+  href="https://wa.me/5491123456789?text=Hola%20quiero%20consultar%20sus%20servicios"
+  className="bg-brand-lime text-black px-[4.5rem] py-[1.5rem] font-black uppercase tracking-widest text-sm hover:-translate-y-1 transition-all shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)] flex items-center justify-center gap-3"
+>
                                   Solicitar Diagnóstico <i data-lucide="arrow-right" className="w-4 h-4"></i>
                               </a>
                           </div>
@@ -329,13 +337,15 @@ export default function Home() {
                               </ul>
                               <div className="border-t border-brand-border pt-8">
                                   <span className="text-xs text-gray-500 uppercase tracking-widest">Resultado Esperado</span>
-                                  <p className="text-xl font-display font-medium text-brand-lime mt-2 italic">Una plataforma de venta validada contra el mercado y lista para escalar facturación desde el día 1.</p>
+                                  <p className="text-xl font-display font-medium text-brand-lime mt-2 italic">Una plataforma de venta validada contra el mercado y lista para escalar.</p>
                               </div>
                           </div>
                           <div className="text-right">
+                            <Link to="/Contacto">
                               <a href="#contacto" className="inline-block bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:bg-white transition-all w-full md:w-auto text-center">
                                   Iniciar Ahora
                               </a>
+                            </Link>
                           </div>
                       </div>
                   </div>
@@ -355,9 +365,15 @@ export default function Home() {
                   No aceptamos a todos los clientes. Solo a aquellos que ven su web como un negocio y no como un costo. ¿Sos uno de ellos?
               </p>
               <div className="flex flex-col md:flex-row justify-center gap-6">
-                  <a href="mailto:diagnotico@agencia.com" className="group bg-white text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:bg-brand-lime transition-all flex items-center justify-center gap-3">
-                      Solicitar Diagnóstico Sin Costo <i data-lucide="mail" className="w-4 h-4 group-hover:scale-110 transition-transform"></i>
-                  </a>
+              <a 
+                href="https://wa.me/5491123456789?text=Hola,%20quiero%20solicitar%20el%20diagnóstico%20sin%20costo" 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group bg-white text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:bg-brand-lime transition-all flex items-center justify-center gap-3"
+              >
+                Solicitar Diagnóstico Sin Costo
+                <Mail className="w-4 h-4 group-hover:scale-110 transition-transform"/>
+              </a>
               </div>
               <div className="mt-12 flex items-center justify-center gap-2 opacity-40">
                   <div className="w-1.5 h-1.5 bg-brand-lime rounded-full"></div>
