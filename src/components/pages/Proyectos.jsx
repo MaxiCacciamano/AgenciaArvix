@@ -2,6 +2,8 @@ import React from 'react'
 import { Menu } from '../Menu.jsx'
 import { Footer } from '../Footer.jsx'
 
+import { ArrowUpRight } from 'lucide-react'
+
 export const Proyectos = () => {
   return (
     <div className="bg-brand-black text-brand-white antialiased selection:bg-brand-lime selection:text-black">
@@ -54,8 +56,7 @@ export const Proyectos = () => {
                             Digitalización del sistema de tracking y portal B2B para una flota de 500+ camiones. Reducción de tiempos operativos en un 35%.
                         </p>
                         <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors">
-                            {/* Detalles Técnicos <i data-lucide="arrow-up-right" class="w-4 h-4"></i> */}
-                            <ArrowUpRight class="w-4 h-4" />
+                            Detalles Técnicos <ArrowUpRight class="w-4 h-4" />
                         </a>
                     </div>
                 </div>
@@ -103,7 +104,7 @@ export const Proyectos = () => {
                             Ecosistema digital para venta de excedentes energéticos entre empresas (P2P). Automatización de contratos inteligentes y facturación.
                         </p>
                         <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors">
-                            Detalles Técnicos <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            Detalles Técnicos <ArrowUpRight class="w-4 h-4" />
                         </a>
                     </div>
                 </div>
@@ -127,7 +128,7 @@ export const Proyectos = () => {
                             Implementación de sistema de prospección automatizada y CRM para firma de consultoría internacional. +50% en conversión de leads.
                         </p>
                         <a href="#" class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors">
-                            Detalles Técnicos <i data-lucide="arrow-up-right" class="w-4 h-4"></i>
+                            Detalles Técnicos <ArrowUpRight class="w-4 h-4" />
                         </a>
                     </div>
                 </div>

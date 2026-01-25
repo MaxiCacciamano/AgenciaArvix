@@ -14,13 +14,14 @@ export const Seo = () => {
     <Menu/>
     <header className="relative pt-40 pb-20 border-b border-brand-border overflow-hidden">
         <div className="container mx-auto px-6 relative z-10">
-            <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">Soluciones B2B</span>
+            <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">OPTIMIZACIÓN DE ACTIVOS DIGITALES</span>
             <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.85] text-white tracking-tighter uppercase mb-12">
                 Ingeniería de<br/><span className="italic text-brand-lime">Visibilidad.</span>
             </h1>
             <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10">
                 <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed">
-                    Casos de estudio donde el SEO dejó de ser una métrica vanidosa para convertirse en el canal de adquisición más rentable del negocio corporativo.
+                   Estrategias de posicionamiento web diseñadas para sitios que necesitan dominar su nicho tras una remodelación técnica.<br/><br/>
+                   Evitamos el estancamiento digital. Si buscas **remodelar tu sitio web** para que finalmente genere dividendos orgánicos, estás en la unidad de inteligencia correcta.
                 </p>
                 <div className="flex flex-wrap gap-4 text-[9px] font-black uppercase tracking-[0.2em]">
                     <button className="px-4 py-2 bg-brand-lime text-black">Todo</button>
@@ -39,7 +40,7 @@ export const Seo = () => {
     <section id="seo-intelligence" className="py-32 bg-brand-black">
         <div className="container mx-auto px-6">
             <div className="mb-16">
-                <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-4 block">Metodología Propietaria</span>
+                <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-4 block">ESTRATEGIA DE DOMINIO</span>
                 <h2 className="font-display text-4xl md:text-6xl font-bold uppercase text-white leading-[0.9]">Search Intelligence <br/><span className="italic text-brand-lime">Unit.</span></h2>
             </div>
 
@@ -54,15 +55,16 @@ export const Seo = () => {
                                 <div className="w-2 h-2 rounded-full bg-brand-lime animate-pulse"></div>
                                 <span className="text-[10px] font-black uppercase tracking-widest text-gray-400">Domino de Entidades y Tópicos</span>
                             </div>
-                            <h3 className="text-3xl md:text-4xl font-display font-bold uppercase text-white mb-6">SEO Semántico <br/>de <span className="text-brand-lime">Alta Autoridad</span></h3>
+                            <h3 className="text-3xl md:text-4xl font-display font-bold uppercase text-white mb-6">SEO para <span className="text-brand-lime">CONVERSIÓN</span><br/>Y REMODELACIÓN</h3>
                             <p className="text-gray-500 text-sm max-w-md leading-relaxed">
-                                No posicionamos palabras sueltas. Construimos grafos de conocimiento que posicionan a tu empresa como la autoridad máxima en su industria para Google.
+                               Muchos ofrecen "tráfico". Nosotros ofrecemos **visibilidad con intención de compra**. Al **remodelar tu página web**, inyectamos una arquitectura semántica que responde a las consultas reales de tus clientes, no a métricas de vanidad.
                             </p>
                         </div>
                         <div className="mt-12 flex gap-4 overflow-hidden">
-                            <div className="bg-brand-gray border border-brand-border px-4 py-3 text-[10px] font-bold text-white uppercase whitespace-nowrap">Cloud Infrastructure</div>
-                            <div className="bg-brand-gray border border-brand-border px-4 py-3 text-[10px] font-bold text-white uppercase whitespace-nowrap">Enterprise ERP</div>
-                            <div className="bg-brand-gray border border-brand-border px-4 py-3 text-[10px] font-bold text-white uppercase whitespace-nowrap">Cybersecurity Solutions</div>
+                            <div className="bg-brand-gray border border-brand-border px-4 py-3 text-[10px] font-bold text-white uppercase whitespace-nowrap">INTENT ANALYSIS</div>
+                            <div className="bg-brand-gray border border-brand-border px-4 py-3 text-[10px] font-bold text-white uppercase whitespace-nowrap">SEMANTIC HUBS
+</div>
+                            <div className="bg-brand-gray border border-brand-border px-4 py-3 text-[10px] font-bold text-white uppercase whitespace-nowrap">ENTITY SEO</div>
                         </div>
                     </div>
 
@@ -73,7 +75,7 @@ export const Seo = () => {
                 <div className="md:col-span-2 bento-card p-8 flex flex-col justify-between group">
                     <i data-lucide="trending-up" className="w-8 h-8 text-brand-lime mb-8"></i>
                     <div>
-                        <h4 className="text-white font-display font-bold text-xl uppercase mb-3">Eficiencia <br/>de Inversión</h4>
+                        <h4 className="text-white font-display font-bold text-xl uppercase mb-3">AUTORIDAD<br/>ESCALABLE</h4>
                         <p className="text-gray-500 text-xs leading-relaxed">Reducimos el CPC promedio en un 70% al migrar la captura de demanda hacia canales orgánicos de alta intención.</p>
                     </div>
                     <div className="mt-6 flex items-baseline gap-2">
@@ -102,8 +104,8 @@ export const Seo = () => {
                             <div className="text-[8px] font-black text-gray-500 uppercase mt-1">Acc</div>
                         </div>
                     </div>
-                    <h4 className="text-white font-display font-bold text-lg uppercase mb-2">Infraestructura Técnica</h4>
-                    <p className="text-gray-500 text-xs">Código limpio, renderizado ultra-rápido y arquitectura de información diseñada para el rastreo eficiente.</p>
+                    <h4 className="text-white font-display font-bold text-lg uppercase mb-2">AUDITORÍA DE SALUD WEB</h4>
+                    <p className="text-gray-500 text-xs">El SEO moderno es velocidad. Si tu sitio web actual es lento, Google te castiga. Nuestra ingeniería web garantiza una infraestructura técnica impecable.</p>
                 </div>
 
 
@@ -133,7 +135,7 @@ export const Seo = () => {
     </section>
 
 
-    <section id="proyectos" className="py-20 bg-brand-black border-t border-brand-border">
+    {/* <section id="proyectos" className="py-20 bg-brand-black border-t border-brand-border">
         <div className="container mx-auto px-6">
             <div className="grid md:grid-cols-2 gap-px bg-brand-border border border-brand-border">
                 
@@ -186,27 +188,27 @@ export const Seo = () => {
                 </div>
             </div>
         </div>
-    </section>
+    </section> */}
 
 
     <section className="py-24 bg-brand-dark border-y border-brand-border">
         <div className="container mx-auto px-6">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-12 text-center">
                 <div>
-                    <span className="block font-display text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">+$12M</span>
-                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">Facturación Generada</span>
+                    <span className="block font-display text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">+300%</span>
+                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">TRÁFICO CUALIFICADO</span>
                 </div>
                 <div>
-                    <span className="block font-display text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">45%</span>
-                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">Reducción de Costos</span>
+                    <span className="block font-display text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">0.8s</span>
+                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">TIEMPO DE CARGA</span>
+                </div>
+                <div>
+                    <span className="block font-display text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">Top 3</span>
+                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">POSICIONES CLAVE</span>
                 </div>
                 <div>
                     <span className="block font-display text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">24/7</span>
-                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">Monitoreo SEO</span>
-                </div>
-                <div>
-                    <span className="block font-display text-5xl md:text-7xl font-bold text-white mb-2 tracking-tighter">98%</span>
-                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">Retención B2B</span>
+                    <span className="text-brand-lime text-[10px] font-black uppercase tracking-widest">CAPTURA DE LEADS</span>
                 </div>
             </div>
         </div>
@@ -218,7 +220,7 @@ export const Seo = () => {
             <h2 className="font-display text-4xl md:text-6xl font-black uppercase mb-12 tracking-tighter max-w-4xl mx-auto leading-none">
                 ¿Tu visibilidad actual genera <span className="text-brand-lime italic">negocio real?</span>
             </h2>
-            <a href="index.html#contacto" className="inline-block bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform mb-20">
+            <a href="https://wa.me/543532679392?text=Hola%20quiero%20mi%20Auditor%C3%ADa%20de%20Search%20Intelligence" className="inline-block bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform mb-20">
                 Auditoría de Search Intelligence
             </a>
         </div>

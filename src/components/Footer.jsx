@@ -36,8 +36,8 @@ export const Footer = () => {
                   </div>
               </div>
               <div className="space-y-8 border-t border-brand-border pt-5 flex flex-col md:flex-row justify-between items-center gap-6">
-                  <span className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em]">&copy; 2024 AGENCIA DIGITAL ARGENTINA - ALL RIGHTS RESERVED.</span>
-                  <span className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em] flex items-center gap-2">MADE IN BUE <span class="text-brand-lime">★</span> SIN HUMO.</span>
+                  <span className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em]">&copy; 2025 AGENCIA DIGITAL ARGENTINA - ALL RIGHTS RESERVED.</span>
+                  <span className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em] flex items-center gap-2">MADE IN ARVIX <span class="text-brand-lime">★</span> SIN HUMO.</span>
               </div>
           </div>
       </footer>
