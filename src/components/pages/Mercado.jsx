@@ -27,13 +27,22 @@ export const Mercado = () => {
                     Investigación de <br/><span class="italic text-brand-lime">Mercado & Competencia.</span>
                 </h1>
                 <p class="text-xl md:text-2xl text-gray-400 font-light leading-relaxed max-w-2xl mb-8">
-                    No adivinamos. Aplicamos ingeniería inversa a los líderes del sector para detectar brechas de demanda y capturar su cuota de mercado con precisión quirúrgica.
+                   Expertos en inteligencia competitiva digital. Aplicamos ingeniería inversa a los líderes
+                   del sector para detectar brechas de demanda y capturar cuota de mercado con precisión analítica.
                 </p>
-                <div class="flex items-center gap-6">
-                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&q=80&w=200&h=80" alt="Data Analytics Visualization" class="grayscale opacity-50 h-12"/>
-                    <div class="h-10 w-px bg-brand-border"></div>
-                    <span class="text-[10px] font-bold uppercase tracking-widest text-gray-500">Análisis Predictivo basado en <br/>Big Data Competitivo</span>
-                </div>
+                <div className="flex items-center gap-6">
+                <span className="text-[10px] font-bold uppercase tracking-widest text-gray-500 italic">
+                Consultoría estratégica basada en <br/>Big Data y Tendencias de Consumo
+              </span>
+            <div className="h-10 w-px bg-white/10"></div>
+              <div className="flex -space-x-4">
+                {[1, 2, 3].map((i) => (
+                  <div key={i} className="w-10 h-10 rounded-full border-2 border-black bg-zinc-800 flex items-center justify-center overflow-hidden">
+                    <img src={`https://i.pravatar.cc/40?img=${i+10}`} alt="Analista de datos" />
+                  </div>
+                ))}
+              </div>
+              </div>
             </div>
             <div class="relative w-full lg:w-1/2">
                 <div class="relative z-10 rounded-lg overflow-hidden border border-brand-border shadow-2xl">
@@ -57,17 +66,17 @@ export const Mercado = () => {
                     </div>
                     <h2 class="font-display text-3xl font-bold uppercase text-white mb-6">Nuestra <br/>Estrategia <span class="text-brand-lime italic">"Spy & Scale"</span></h2>
                     <p class="text-gray-500 text-sm leading-relaxed mb-8">
-                        La mejor inspiración proviene de lo que ya genera ingresos. Analizamos los activos digitales de tu competencia para entender por qué ganan y cómo podemos superarlos.
+                       El <span class="text-brand-lime italic">benchmarking competitivo </span> es el núcleo de nuestra metodología. Analizamos los activos digitales de su competencia para entender sus fuentes de tráfico, estrategias de contenido y tácticas de retención.
                     </p>
                     <ul class="space-y-4">
                         <li class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-gray-300">
-                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-lime"></i> Desglose de Inversión Competitiva
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-lime"></i>ANÁLISIS DE POSICIONAMIENTO ORGÁNICO
                         </li>
                         <li class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-gray-300">
-                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-lime"></i> Análisis de Embudos de Conversión
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-lime"></i> MAPEO DE ARQUITECTURA WEB COMPETITIVA
                         </li>
                         <li class="flex items-center gap-3 text-[10px] font-bold uppercase tracking-widest text-gray-300">
-                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-lime"></i> Mapeo de Keywords Transaccionales
+                            <i data-lucide="check-circle" class="w-4 h-4 text-brand-lime"></i> AUDITORÍA DE AUTORIDAD DE DOMINIO (BACKLINKS)
                         </li>
                     </ul>
                 </div>

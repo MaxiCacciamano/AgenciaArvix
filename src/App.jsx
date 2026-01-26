@@ -6,6 +6,7 @@ import { Mercado } from "./components/pages/Mercado.jsx";
 import { Nosotros } from "./components/pages/Nosotros.jsx";
 import { Contacto } from "./components/pages/Contacto.jsx";
 import { Sem } from "./components/pages/Sem.jsx";
+import { Ecommerce } from "./components/pages/Ecommerce.jsx";
 
 // function Layout({ children }) {
 //   return (
@@ -29,6 +30,7 @@ function App() {
           <Route path="/Nosotros" element={<Nosotros/>}/>
           <Route path="/Contacto" element={<Contacto/>}/>
           <Route path="/SEM" element={<Sem/>}/>
+          <Route path="/Ecommerce" element={<Ecommerce/>}/>
         </Routes>
       {/* </Layout> */}
     </Router>

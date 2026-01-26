@@ -8,7 +8,6 @@ export default {
     container: {
       center: true,
       padding: "1.5rem",
-
     },
     extend: {
       fontFamily: {
@@ -23,6 +22,20 @@ export default {
           border: "#222222",
           lime: "#CCFF00",
           white: "#ffffff",
+        },
+      },
+
+      /* ✅ ANIMATIONS */
+      animation: {
+        marquee: "marquee 25s linear infinite",
+        "spin-slow": "spin 12s linear infinite",
+      },
+
+      /* ✅ KEYFRAMES */
+      keyframes: {
+        marquee: {
+          "0%": { transform: "translateX(0%)" },
+          "100%": { transform: "translateX(-50%)" },
         },
       },
     },

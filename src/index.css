@@ -141,3 +141,28 @@
             background-color: #0a0a0a;
             border-color: #CCFF00;
         }
+
+                /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #333;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #CCFF00;
+        }
+
+        /* Utilities */
+        .text-stroke {
+            -webkit-text-stroke: 1px rgba(255, 255, 255, 0.2);
+            color: transparent;
+        }
+        .text-stroke-hover:hover {
+            -webkit-text-stroke: 0px;
+            color: #CCFF00;
+        }
+        

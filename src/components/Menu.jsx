@@ -33,7 +33,7 @@ export const Menu = () => {
               className={`absolute top-full left-0 mt-4 w-40 bg-brand-black border border-brand-border overflow-hidden transition-all duration-300
               ${open ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}
             >
-              <a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">Ecommerce</a>
+              <Link to="/Ecommerce"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">Ecommerce</a></Link>
               <Link to="/Seo"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">SEO</a></Link>
               <Link to="/SEM"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">SEM</a></Link>
               <Link to="/Marketing-Investigación"><a className="block px-4 py-2 hover:text-brand-lime transition-colors cursor-pointer">Investigación de mercado</a></Link>
