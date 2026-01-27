@@ -2,6 +2,9 @@ import React from 'react';
 import { Menu } from '../Menu.jsx';
 import { Footer } from '../Footer.jsx';
 
+import Coope from '../../../public/img/Coope.png'
+import Cuaderno from '../../../public/img/Cuaderno.webp'
+
 import { ArrowUpRight, ChevronRight, ArrowRight, Briefcase  } from 'lucide-react';
 import { Link } from 'react-router-dom';
 
@@ -49,9 +52,9 @@ export const Proyectos = () => {
 						<div class="bg-brand-black group project-card overflow-hidden">
 							<div class="aspect-[16/10] overflow-hidden">
 								<img
-									src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
-									alt="Logística y Distribución"
-									class="w-full h-full object-cover grayscale transition-all duration-700 project-image"
+									src={Coope}
+									alt="Cooperativa Colonia Tirolesa"
+									class="w-[100%] h-full object-cover grayscale transition-all duration-700 project-image"
 								/>
 							</div>
 							<div class="p-10 border-t border-brand-border transition-colors duration-500 project-info">
@@ -83,9 +86,9 @@ export const Proyectos = () => {
 						<div class="bg-brand-black group project-card overflow-hidden">
 							<div class="aspect-[16/10] overflow-hidden">
 								<img
-									src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=2070&auto=format&fit=crop"
+									src={Cuaderno}
 									alt="Consultoría de Negocios"
-									class="w-full h-full object-cover grayscale transition-all duration-700 project-image"
+									class="w-full h-full object-contain grayscale bg-black transition-all duration-700 project-image"
 								/>
 							</div>
 							<div class="p-10 border-t border-brand-border transition-colors duration-500 project-info">
@@ -152,9 +155,9 @@ export const Proyectos = () => {
 						<div class="bg-brand-black group project-card overflow-hidden">
 							<div class="aspect-[16/10] overflow-hidden">
 								<img
-									src="https://images.unsplash.com/photo-1553877522-43269d4ea984?q=80&w=2070&auto=format&fit=crop"
+									src={Coope}
 									alt="Business Strategy"
-									class="w-full h-full object-cover grayscale transition-all duration-700 project-image"
+									class="w-[100%] h-full object-cover grayscale transition-all duration-700 project-image"
 								/>
 							</div>
 							<div class="p-10 border-t border-brand-border transition-colors duration-500 project-info">
@@ -167,7 +170,7 @@ export const Proyectos = () => {
 											Burgerland
 										</h3>
 									</div>
-									<span class="text-gray-600 font-display italic text-xl">2024</span>
+									<span class="text-gray-600 font-display italic text-xl">2025</span>
 								</div>
 								<p class="text-gray-500 text-sm mb-8 leading-relaxed max-w-md">
 									Página web diseñada para centralizar el menú, automatizar solicitudes de pedidos y
