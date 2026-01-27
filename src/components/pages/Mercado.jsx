@@ -7,7 +7,8 @@ import {
   Zap,
   Users,
   BarChart3,
-  Mail
+  Mail,
+  ChevronRight
 } from 'lucide-react'
 
 export const Mercado = () => {
@@ -202,7 +203,7 @@ export const Mercado = () => {
 
     <footer class="py-32 bg-brand-black relative overflow-hidden">
 
-        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" alt="Cyber Background" class="absolute inset-0 w-full h-full object-cover opacity-[0.03] pointer-events-none"/>
+        <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&q=80&w=1200" alt="Cyber Background" class="absolute inset-0 w-full h-full object-cover opacity-[0.15] pointer-events-none"/>
         
         <div class="container mx-auto px-6 text-center relative z-10">
             <h2 class="font-display text-4xl md:text-6xl font-black uppercase text-white mb-8 tracking-tighter">
@@ -211,8 +212,9 @@ export const Mercado = () => {
             <p class="text-gray-500 max-w-2xl mx-auto mb-12 text-lg">
                 Solicita un reporte preliminar de "Market Intelligence" y descubre dónde están tus mayores oportunidades de crecimiento orgánico.
             </p>
-            <a href="index.html#contacto" class="inline-block bg-brand-lime text-black px-12 py-5 font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-transform">
+            <a href="index.html#contacto" className="inline-flex items-center gap-3 bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm transition-all hover:scale-105 mb-20">
                 Iniciar Investigación
+                <ChevronRight className="w-4 h-4" />
             </a>
 
         </div>

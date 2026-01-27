@@ -3,6 +3,8 @@ import { Menu } from '../Menu'
 import { Footer } from '../Footer'
 import emailjs from 'emailjs-com'
 
+import { ChevronRight } from 'lucide-react';
+
 export const Contacto = () => {
 
     const sendEmail = (e) => {
@@ -61,7 +63,7 @@ export const Contacto = () => {
                                 </div>
                                 <div>
                                     <span className="block text-[10px] font-black uppercase tracking-widest text-gray-600 mb-1">Consultas Directas</span>
-                                    <a href="mailto:intelligence@agencia.com" className="font-display text-xl font-semibold hover:text-brand-lime transition-colors">intelligence@agencia.com</a>
+                                    <a href="mailto:intelligence@agencia.com" className="font-display text-xl font-semibold hover:text-brand-lime transition-colors">consultas@agenciaarvix.com</a>
                                 </div>
                             </div>
 
@@ -71,7 +73,7 @@ export const Contacto = () => {
                                 </div>
                                 <div>
                                     <span className="block text-[10px] font-black uppercase tracking-widest text-gray-600 mb-1">Sede Operativa</span>
-                                    <span className="font-display text-xl font-semibold">Distrito Tecnológico<br/>Buenos Aires, AR.</span>
+                                    <span className="font-display text-xl font-semibold">Nueva Cordoba<br/>Cordoba, AR.</span>
                                 </div>
                             </div>
                         </div>
@@ -145,9 +147,9 @@ export const Contacto = () => {
                             </div>
 
                             <div className="pt-8 flex flex-col sm:flex-row items-center gap-8">
-                                <button type="submit" className="w-full sm:w-auto bg-brand-lime text-black px-12 py-5 font-black uppercase tracking-[0.2em] text-[12px] hover:bg-white hover:-translate-y-1 transition-all duration-300 shadow-xl flex items-center justify-center gap-4 group">
+                                <button type="submit" className="w-full sm:w-auto bg-brand-lime text-black px-12 py-5 font-black uppercase tracking-[0.2em] text-[12px] hover:-translate-y-1 transition-all duration-300 shadow-xl flex items-center justify-center gap-4 group">
                                     Solicitar Auditoría
-                                    <i data-lucide="arrow-right" className="w-4 h-4 group-hover:translate-x-1 transition-transform"></i>
+                                    <ChevronRight className="w-4 h-4  transition-transform"/>
                                 </button>
                                 
                                 <p className="text-[10px] text-gray-600 max-w-[240px] leading-relaxed text-center sm:text-left">

@@ -7,6 +7,7 @@ import { Nosotros } from "./components/pages/Nosotros.jsx";
 import { Contacto } from "./components/pages/Contacto.jsx";
 import { Sem } from "./components/pages/Sem.jsx";
 import { Ecommerce } from "./components/pages/Ecommerce.jsx";
+import { Masproyectos } from "./components/pages/Masproyectos.jsx";
 
 // function Layout({ children }) {
 //   return (
@@ -31,6 +32,7 @@ function App() {
           <Route path="/Contacto" element={<Contacto/>}/>
           <Route path="/SEM" element={<Sem/>}/>
           <Route path="/Ecommerce" element={<Ecommerce/>}/>
+          <Route path="/Mas-proyectos" element={<Masproyectos/>}/>
         </Routes>
       {/* </Layout> */}
     </Router>

@@ -3,7 +3,7 @@ import { Menu } from '../Menu.jsx';
 import { Footer } from '../Footer.jsx';
 import { Link } from 'react-router-dom';
 
-import { Mail } from 'lucide-react';
+import { Mail, Search, ArrowRight, ChevronRight } from 'lucide-react';
 
 import imghome from '../../../public/img/tienda.png';
 
@@ -46,13 +46,14 @@ export default function Home() {
 										className="bg-brand-lime text-black px-[4.5rem] py-[1.5rem] font-black uppercase tracking-widest text-sm hover:-translate-y-1 transition-all shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)] flex items-center justify-center gap-3"
 									>
 										Solicitar Diagnóstico
-										<i data-lucide="arrow-right" className="w-4 h-4" />
+										<ChevronRight className="w-4 h-4" />
 									</a>
 								</div>
 
 								<div className="flex flex-wrap gap-x-8 gap-y-4">
 									<div className="flex items-center gap-3">
-										<i data-lucide="search" className="w-5 h-5 text-brand-lime" />
+										<Search className="w-5 h-5 text-brand-lime"/>
+										
 										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
 											Benchmark Competitivo
 										</span>
@@ -616,7 +617,7 @@ export default function Home() {
 							href="https://wa.me/5491123456789?text=Hola,%20quiero%20solicitar%20el%20diagnóstico%20sin%20costo"
 							target="_blank"
 							rel="noopener noreferrer"
-							className="group bg-white text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:bg-brand-lime transition-all flex items-center justify-center gap-3"
+							className="group bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:bg-brand-lime transition-all flex items-center justify-center gap-3"
 						>
 							Solicitar Diagnóstico Sin Costo
 							<Mail className="w-4 h-4 group-hover:scale-110 transition-transform" />

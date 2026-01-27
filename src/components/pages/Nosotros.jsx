@@ -11,7 +11,8 @@ import {
 	BarChart3,
 	Rocket,
 	ArrowRight,
-	ChevronDown
+	ChevronDown,
+	ChevronRight
 } from 'lucide-react';
 
 export const Nosotros = () => {
@@ -359,16 +360,21 @@ export const Nosotros = () => {
 					<div className="flex flex-col sm:flex-row items-center justify-center gap-6">
 						<a
 							href="https://wa.me/543532679392?text=Hola%20quiero%20crear%20mi%20sitio%20web"
-							className="inline-block bg-black text-white px-12 py-6 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform"
+							className="bg-black text-white px-12 py-6 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform 
+							flex flex-col sm:flex-row gap-4 mb-1"
 						>
 							Quiero mi sitio web
+							<ChevronRight className="w-4 h-4" />
 						</a>
 
 						<a
 							href="https://wa.me/543532679392?text=Hola%2C%20quiero%20remodelar%20mi%20sitio%20web"
-							className="inline-block text-black border-2 border-black px-10 py-5 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform"
+							className="text-black border-2 border-black px-10 py-5 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform
+							flex flex-col sm:flex-row gap-4 mb-1
+							"
 						>
 							Remodelar mi página
+							<ChevronRight className="w-4 h-4" />
 						</a>
 					</div>
 				</div>
