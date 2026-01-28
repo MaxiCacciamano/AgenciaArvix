@@ -4,6 +4,8 @@ import { Footer } from '../Footer.jsx';
 
 import Coope from '../../../public/img/Coope.png'
 import Cuaderno from '../../../public/img/Cuaderno.webp'
+import Sio from '../../../public/img/Sio.png'
+import Burgerland from '../../../public/img/Burgerland.png'
 
 import { ArrowUpRight, ChevronRight, ArrowRight, Briefcase  } from 'lucide-react';
 import { Link } from 'react-router-dom';
@@ -120,7 +122,7 @@ export const Proyectos = () => {
 						<div class="bg-brand-black group project-card overflow-hidden">
 							<div class="aspect-[16/10] overflow-hidden">
 								<img
-									src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2070&auto=format&fit=crop"
+									src={Sio}
 									alt="Oficinas Corporativas"
 									class="w-full h-full object-cover grayscale transition-all duration-700 project-image"
 								/>
@@ -155,7 +157,7 @@ export const Proyectos = () => {
 						<div class="bg-brand-black group project-card overflow-hidden">
 							<div class="aspect-[16/10] overflow-hidden">
 								<img
-									src={Coope}
+									src={Burgerland}
 									alt="Business Strategy"
 									class="w-[100%] h-full object-cover grayscale transition-all duration-700 project-image"
 								/>

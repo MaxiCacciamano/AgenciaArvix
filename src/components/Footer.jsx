@@ -11,7 +11,7 @@ export const Footer = () => {
                           ARVIX<span className="text-brand-lime">.</span>
                       </div>
                       <p className="text-gray-600 text-sm leading-relaxed">
-                          Desarrollo web estratégico desde Buenos Aires para todo el mundo. Especialistas en convertir tráfico en activos financieros.
+                          Desarrollo web estratégico desde Cordoba Argentina para todo el mundo. Especialistas en convertir tráfico en activos financieros.
                       </p>
                   </div>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-16">

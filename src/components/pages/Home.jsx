@@ -13,7 +13,7 @@ export default function Home() {
 			<div className="noise-overlay" />
 			<Menu />
 
-			<header className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden border-b border-brand-border grid-bg">
+			<header className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden border-b border-brand-border grid-bg ">
 				<div className="container mx-auto px-6 relative z-10">
 					<div className="max-w-6xl">
 						<div className="inline-flex items-center gap-2 border border-brand-lime/30 bg-brand-lime/5 px-4 py-1.5 mb-10 rounded-full">
@@ -22,38 +22,37 @@ export default function Home() {
 							</span>
 						</div>
 
-						<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-8xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
-							Tu sitio web no es un gasto.
+						<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-7xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
+							Agencia de Desarrollo Web eCommerce que convierte
 							<br />
-							Es tu motor de <span className="text-brand-lime">ventas.</span>
+							tu sitio en <span className="text-brand-lime">ventas</span>
 						</h1>
+
 
 						<div className="grid md:grid-cols-0 gap-0 items-center">
 							{/* TEXTO */}
 							<div className="md:col-span-6">
 								<p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed mb-12">
-									Desarrollo web estratégico con{' '}
-									<span className="text-white font-medium italic underline decoration-brand-lime">
-										investigación de mercado integrada
-									</span>
-									.<br/> Si no sabés cómo vende tu competencia, estás perdiendo antes de empezar.
-                                    <p className='py-3'>Diseñamos la arquitectura que tu marca necesita para dejar de ser una opción y convertirse en la autoridad de su industria.</p>
+									Somos una agencia de desarrollo web eCommerce en Argentina especializada en crear tiendas online profesionales orientadas a ventas reales. <br />
+									Diseñamos sitios con arquitectura comercial, <span className="text-white font-medium italic underline decoration-brand-lime">
+										enfoque estratégico y SEO técnico para ecommerce</span> desde el primer día para posicionar y convertir.
 								</p>
+
 
 								<div className="flex flex-col sm:flex-row gap-4 mb-16">
 									<a
 										href="https://wa.me/5491123456789?text=Hola%20quiero%20consultar%20sus%20servicios"
 										className="bg-brand-lime text-black px-[4.5rem] py-[1.5rem] font-black uppercase tracking-widest text-sm hover:-translate-y-1 transition-all shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)] flex items-center justify-center gap-3"
 									>
-										Solicitar Diagnóstico
+										Solicitar Diagnóstico SEO y Auditoría de Tienda
 										<ChevronRight className="w-4 h-4" />
 									</a>
 								</div>
 
 								<div className="flex flex-wrap gap-x-8 gap-y-4">
 									<div className="flex items-center gap-3">
-										<Search className="w-5 h-5 text-brand-lime"/>
-										
+										<Search className="w-5 h-5 text-brand-lime" />
+
 										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
 											Benchmark Competitivo
 										</span>
@@ -200,9 +199,12 @@ export default function Home() {
 							Diagnóstico de Mercado
 						</span>
 						<h2 className="font-display text-5xl md:text-6xl font-bold uppercase text-white mb-8 leading-tight">
-							Tu sitio actual es un<br />
+							Tu sitio web es un<br />
 							activo invisible <span className="text-brand-lime italic">en un mar de ruido.</span>
 						</h2>
+						<p className="text-gray-500 text-base max-w-2xl mx-auto mb-16">
+							Sin una estrategia de desarrollo web ecommerce y posicionamiento en buscadores, incluso una tienda online bien diseñada puede volverse invisible frente a la competencia.
+						</p>
 					</div>
 
 					<div className="grid md:grid-cols-3 gap-8">
@@ -212,8 +214,8 @@ export default function Home() {
 								Sin benchmark competitivo
 							</h3>
 							<p className="text-gray-500 text-sm leading-relaxed">
-								Si solo copiás plantillas de otros sin una estrategia de mercado, estás operando a ciegas. 
-                                Sin un benchmark competitivo profundo, no entendés por qué los líderes de tu nicho venden y vos no. Estás perdiendo antes de empezar.
+								Si solo copiás plantillas de otros sin una estrategia de mercado, estás operando a ciegas.
+								Sin un benchmark competitivo profundo, no entendés por qué los líderes de tu nicho venden y vos no. Estás perdiendo antes de empezar.
 							</p>
 						</div>
 						<div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
@@ -222,9 +224,9 @@ export default function Home() {
 								Fallas en la arquitectura de ventas
 							</h3>
 							<p className="text-gray-500 text-sm leading-relaxed">
-								Mucho tráfico, cero resultados. Tu diseño puede ser "lindo", 
-                                pero si carece de ingeniería comercial e interfaces de alta fidelidad, 
-                                no guía al usuario hacia la transacción final. Tu sitio es un laberinto, no un embudo de conversión.
+								Mucho tráfico, cero resultados. Tu diseño puede ser "lindo",
+								pero si carece de ingeniería comercial e interfaces de alta fidelidad,
+								no guía al usuario hacia la transacción final. Tu sitio es un laberinto, no un embudo de conversión.
 							</p>
 						</div>
 						<div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
@@ -234,7 +236,7 @@ export default function Home() {
 							</h3>
 							<p className="text-gray-500 text-sm leading-relaxed">
 								Cada segundo que tu plataforma tarda en cargar, perdés un 20% de tus clientes potenciales.
-                                Sin una infraestructura de desarrollo web estratégico y SEO técnico nativo, Google te ignora y tus clientes huyen hacia la competencia.
+								Sin una infraestructura de desarrollo web estratégico y SEO técnico nativo, Google te ignora y tus clientes huyen hacia la competencia.
 							</p>
 						</div>
 					</div>
@@ -257,8 +259,8 @@ export default function Home() {
 							<p className="text-xl text-gray-400 mb-10 leading-relaxed">
 								No somos simplemente una agencia creativa; somos arquitectos de ventas, aplicamos un{' '}
 								<span className="text-white font-bold">Método Riguroso</span> basado en datos reales para potenciar tu negocio en Google.
-                                Investigamos a tus 5 competidores más fuertes antes de diseñar tu arquitectura de ventas, 
-                                asegurando que tu inversión se transforme en un activo financiero.
+								Investigamos a tus 5 competidores más fuertes antes de diseñar tu arquitectura de ventas dentro del desarrollo de tu tienda online profesional,
+								asegurando que tu inversión se transforme en un activo financiero.
 							</p>
 							<ul className="space-y-6">
 								<li className="flex items-start gap-4">
@@ -287,7 +289,7 @@ export default function Home() {
 										</p>
 									</div>
 								</li>
-                                								<li className="flex items-start gap-4">
+								<li className="flex items-start gap-4">
 									<div className="mt-1 bg-brand-lime p-1 rounded-sm">
 										<i data-lucide="check" className="w-3 h-3 text-black" />
 									</div>
@@ -557,7 +559,7 @@ export default function Home() {
 								<div>
 									<ul className="space-y-4 mb-12">
 										<li className="flex gap-3 items-center text-sm font-bold uppercase tracking-wide">
-											<i data-lucide="check" className="w-5 h-5 text-brand-lime" /> Desarrollo Web
+											<i data-lucide="check" className="w-5 h-5 text-brand-lime" /> Diseño 	 Web
 											Premium
 										</li>
 										<li className="flex gap-3 items-center text-sm font-bold uppercase tracking-wide">

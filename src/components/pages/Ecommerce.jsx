@@ -24,7 +24,7 @@ export const Ecommerce = () => {
        <header className="relative pt-40 pb-20 border-b border-brand-border grid-bg">
         <div className="container mx-auto px-6">
             <div className="max-w-5xl">
-                <span className="inline-block border border-brand-lime text-brand-lime px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">Ecommerce de Próxima Generación</span>
+                <span className="inline-block text-brand-lime px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">Ecommerce de Próxima Generación</span>
                 <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.85] uppercase tracking-tighter mb-10">
                     Tu tienda no necesita ser<br/>
                     {/* <span className="text-outline"></span> <br/> */}
