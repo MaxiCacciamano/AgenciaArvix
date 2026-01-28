@@ -87,8 +87,8 @@ export const Ecommerce = () => {
                 <div className="container mx-auto px-6">
                     <div className="max-w-5xl">
                         <span className="inline-block text-brand-lime px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">Ecommerce de Próxima Generación</span>
-                        <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-8xl leading-[0.85] uppercase tracking-tighter mb-10">
-                            Desarrollo y rediseño de <span className="text-brand-lime italic">ecommerce</span> que convierten
+                        <h1 className="font-display font-bold uppercase tracking-tighter text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9]">
+                            Desarrollo y rediseño de <span className="text-brand-lime font-semibold italic">ecommerce</span> que convierten
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-400 max-w-2xl font-light mb-12">
                             Creamos tiendas online rápidas, escalables y optimizadas para vender más en ecommerce.
@@ -106,7 +106,7 @@ export const Ecommerce = () => {
                 <div className="container mx-auto px-6">
                     <div className="grid lg:grid-cols-2 gap-16 items-center">
                         <div>
-                            <h2 className="font-display text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8">
+                            <h2 className=" text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-8">
                                 ¿Tu tienda online actual <span className="text-brand-lime italic">te está frenando?</span>
                             </h2>
                             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
@@ -168,7 +168,7 @@ export const Ecommerce = () => {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-20">
                         <span className="text-brand-lime text-[10px] font-bold uppercase tracking-[0.4em]">Modelos de Negocio</span>
-                        <h2 className="font-display text-5xl md:text-7xl font-bold uppercase tracking-tighter mt-4">Soluciones <br /> a Medida<span className="text-outline"></span></h2>
+                        <h2 className=" text-5xl md:text-7xl font-bold uppercase tracking-tighter mt-4">Soluciones <br /> a Medida<span className="text-outline"></span></h2>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -203,7 +203,7 @@ export const Ecommerce = () => {
 
                         <div className="border border-brand-border p-8 hover:border-brand-lime transition-all group flex flex-col justify-between">
                             <div>
-                                <h3 className="font-display text-2xl font-bold uppercase mb-4">Enterprise <br /> Ecosystem</h3>
+                                <h3 className="text-2xl font-bold uppercase mb-4">Enterprise <br /> Ecosystem</h3>
                                 <p className="text-gray-500 text-sm mb-8 leading-relaxed">Desarrollo Headless o VTEX. Omnicanalidad total para empresas líderes en el mercado.</p>
                                 <ul className="text-[10px] uppercase font-bold tracking-widest space-y-3 text-gray-400">
                                     <li>● Infraestructura Headless</li>
@@ -219,7 +219,7 @@ export const Ecommerce = () => {
 
             <section className="py-24 border-t border-brand-border">
                 <div className="container mx-auto px-6 max-w-4xl">
-                    <h2 className="font-display text-4xl font-bold uppercase mb-12 text-center">Dudas <span className="text-brand-lime">Frecuentes</span></h2>
+                    <h2 className="text-4xl font-bold uppercase mb-12 text-center">Dudas <span className="text-brand-lime">Frecuentes</span></h2>
                     <div className="space-y-4">
                         <div className="border border-brand-border p-6 hover:bg-white/5 transition-all cursor-pointer">
                             <h4 className="font-bold text-sm uppercase tracking-wider mb-2">¿Cuánto tiempo lleva remodelar una tienda online?</h4>
