@@ -26,7 +26,7 @@ export const Nosotros = () => {
 				<div className="absolute inset-0 z-0">
 					<img
 						src="https://images.unsplash.com/photo-1552664730-d307ca884978?q=80&w=2070&auto=format&fit=crop"
-						alt="Equipo trabajando en estrategia de ventas"
+						alt="Equipo de agencia de desarrollo web eCommerce en Argentina trabajando en estrategia digital"
 						className="w-full h-full object-cover grayscale opacity-40"
 					/>
 					<div className="absolute inset-0 hero-gradient" />
@@ -36,8 +36,8 @@ export const Nosotros = () => {
 					<span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">
 						Sobre la Agencia
 					</span>
-					<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-9xl leading-[0.85] text-white tracking-tighter uppercase mb-12">
-						Menos Humo.<br />Más <span className="text-brand-lime italic">Método.</span>
+					<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-8xl leading-[0.85] text-white tracking-tighter uppercase mb-12">
+						No diseñamos páginas.<br />Construimos <span className="text-brand-lime italic"><br/>Activos digitales.</span>
 					</h1>
 					<div className="grid md:grid-cols-12 gap-10">
 						<div className="md:col-span-8">
@@ -60,8 +60,7 @@ export const Nosotros = () => {
 							Nuestra Misión
 						</span>
 						<h2 className="font-display text-4xl md:text-6xl font-bold uppercase text-white mb-10 leading-tight">
-							Transformar sitios web estáticos en{' '}
-							<span className="italic text-brand-lime">activos financieros</span> de alto rendimiento.
+							Somos una agencia de <span className="italic text-brand-lime">desarrollo web eCommerce</span> en Argentina
 						</h2>
 						<p className="text-xl text-gray-400 leading-relaxed mb-8">
 							Existimos para erradicar la incertidumbre en el mundo digital. Nuestra misión es dotar a las

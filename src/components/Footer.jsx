@@ -13,6 +13,8 @@ export const Footer = () => {
                       <p className="text-gray-600 text-sm leading-relaxed">
                           Desarrollo web estratégico desde Cordoba Argentina para todo el mundo. Especialistas en convertir tráfico en activos financieros.
                       </p>
+                      <br/>
+                      <p>Cordoba, Argentina</p>
                   </div>
                   <div className="grid grid-cols-2 md:grid-cols-3 gap-16">
                       <div>
