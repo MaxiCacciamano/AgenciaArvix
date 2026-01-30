@@ -88,14 +88,15 @@ export const Ecommerce = () => {
                     <div className="max-w-5xl">
                         <span className="inline-block text-brand-lime px-3 py-1 text-[10px] font-bold uppercase tracking-widest mb-6">Ecommerce de Próxima Generación</span>
                         <h1 className="font-display font-bold uppercase tracking-tighter text-5xl sm:text-6xl md:text-7xl lg:text-8xl leading-[0.9]">
-                            Desarrollo y rediseño de <span className="text-brand-lime font-semibold italic">ecommerce</span> que convierten
+                            Desarrollo de <span className="text-brand-lime font-semibold italic">tiendas online</span> en Argentina que venden más
                         </h1>
                         <p className="text-xl md:text-2xl text-gray-400 max-w-2xl font-light mb-12">
-                            Creamos tiendas online rápidas, escalables y optimizadas para vender más en ecommerce.
+                            Diseñamos y desarrollamos ecommerce profesionales en Argentina, optimizados para velocidad, SEO y conversión.
+                            Trabajamos con Shopify, WooCommerce, Tiendanube y soluciones a medida para marcas que buscan escalar ventas.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <a href="#soluciones" className="inline-flex gap-3 bg-brand-lime text-black px-8 py-5 font-bold uppercase text-xs tracking-widest hover:-translate-y-1 hover:bg-brand-lime transition-all">Crear Sitio Nuevo <ChevronRight className="w-4 h-4" /></a>
-                            <a href="#remodelacion" className="border border-brand-border text-white px-8 py-5 font-bold uppercase text-xs tracking-widest hover:bg-white/5 transition-all">Rediseñar mi Tienda</a>
+                            <a href="#soluciones" className="inline-flex gap-3 bg-brand-lime text-black px-8 py-5 font-bold uppercase text-xs tracking-widest hover:-translate-y-1 hover:bg-brand-lime transition-all">Hablar con un especialista <ChevronRight className="w-4 h-4" /></a>
+                            <a href="#remodelacion" className="border border-brand-border text-white px-8 py-5 font-bold uppercase text-xs tracking-widest hover:bg-white/5 transition-all">Quiero mejorar mi tienda</a>
                         </div>
                     </div>
                 </div>
@@ -110,7 +111,9 @@ export const Ecommerce = () => {
                                 ¿Tu tienda online actual <span className="text-brand-lime italic">te está frenando?</span>
                             </h2>
                             <p className="text-gray-400 text-lg mb-10 leading-relaxed">
-                                El 80% de los ecommerces pierden ventas por lentitud, mala UX móvil o procesos de checkout obsoletos. Realizamos una **Auditoría Técnica** y transformamos tu web en una máquina de facturación.
+                                  Muchas tiendas online pierden ventas por tiempos de carga altos, mala experiencia en celulares o procesos de
+                                  compra poco optimizados. Realizamos una auditoría técnica y comercial completa para detectar los puntos críticos
+                                  y transformar tu ecommerce en un canal de ventas eficiente y escalable.
                             </p>
                             <ul className="space-y-6">
                                 <li className="flex items-start gap-4">
@@ -168,7 +171,9 @@ export const Ecommerce = () => {
                 <div className="container mx-auto px-6">
                     <div className="text-center mb-20">
                         <span className="text-brand-lime text-[10px] font-bold uppercase tracking-[0.4em]">Modelos de Negocio</span>
-                        <h2 className=" text-5xl md:text-7xl font-bold uppercase tracking-tighter mt-4">Soluciones <br /> a Medida<span className="text-outline"></span></h2>
+                        <h2 className=" text-5xl md:text-7xl font-bold uppercase tracking-tighter mt-4">
+                           Soluciones de <span className="text-brand-lime">desarrollo ecommerce</span> a medida
+                        </h2>
                     </div>
 
                     <div className="grid md:grid-cols-3 gap-8">
@@ -176,7 +181,8 @@ export const Ecommerce = () => {
                         <div className="border border-brand-border p-8 hover:border-brand-lime transition-all group flex flex-col justify-between">
                             <div>
                                 <h3 className="font-display text-2xl font-bold uppercase mb-4">Start-Up Pack</h3>
-                                <p className="text-gray-500 text-sm mb-8 leading-relaxed">Ideal para marcas nuevas que buscan un lanzamiento sólido en Shopify o Tiendanube. SEO básico incluido.</p>
+                                <p className="text-gray-500 text-sm mb-8 leading-relaxed">  Para marcas que están dando sus primeros pasos y quieren lanzar bien desde el día uno.
+                                Te armamos una tienda sólida, lista para vender y crecer sin dolores de cabeza.</p>
                                 <ul className="text-[10px] uppercase font-bold tracking-widest space-y-3 text-gray-400">
                                     <li>● Setup de Plataforma</li>
                                     <li>● Pasarelas de Pago</li>
@@ -190,7 +196,8 @@ export const Ecommerce = () => {
                             <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-brand-lime text-black px-4 py-1 text-[9px] font-black uppercase">Más Solicitado</div>
                             <div>
                                 <h3 className="font-display text-3xl font-bold uppercase mb-4">Professional <br /> Redesign</h3>
-                                <p className="text-gray-400 text-sm mb-8 leading-relaxed">Migraciones complejas, remodelación total de UX y optimización de velocidad. Para quienes facturan pero quieren más.</p>
+                                <p className="text-gray-400 text-sm mb-8 leading-relaxed">  Si tu tienda ya vende pero sentís que podría rendir mucho más, este es el siguiente nivel.
+                                 Rediseñamos la experiencia, optimizamos el rendimiento y ajustamos cada paso del proceso de compra.</p>
                                 <ul className="text-[10px] uppercase font-bold tracking-widest space-y-3 text-brand-lime">
                                     <li>● Auditoría UX Profunda</li>
                                     <li>● Migración de Catálogo</li>
@@ -204,7 +211,8 @@ export const Ecommerce = () => {
                         <div className="border border-brand-border p-8 hover:border-brand-lime transition-all group flex flex-col justify-between">
                             <div>
                                 <h3 className="text-2xl font-bold uppercase mb-4">Enterprise <br /> Ecosystem</h3>
-                                <p className="text-gray-500 text-sm mb-8 leading-relaxed">Desarrollo Headless o VTEX. Omnicanalidad total para empresas líderes en el mercado.</p>
+                                <p className="text-gray-500 text-sm mb-8 leading-relaxed">  Soluciones pensadas para operaciones complejas, múltiples canales y grandes volúmenes de venta.
+                                Arquitecturas flexibles, integraciones avanzadas y desarrollos totalmente personalizados.</p>
                                 <ul className="text-[10px] uppercase font-bold tracking-widest space-y-3 text-gray-400">
                                     <li>● Infraestructura Headless</li>
                                     <li>● B2B & B2C Modules</li>

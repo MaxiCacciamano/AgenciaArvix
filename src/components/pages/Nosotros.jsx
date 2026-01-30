@@ -60,7 +60,7 @@ export const Nosotros = () => {
 							Nuestra Misión
 						</span>
 						<h2 className="font-display text-4xl md:text-6xl font-bold uppercase text-white mb-10 leading-tight">
-							Somos una agencia de <span className="italic text-brand-lime">desarrollo web eCommerce</span> en Argentina
+							Somos una agencia de <span className="italic text-brand-lime">diseño web eCommerce</span> en Argentina
 						</h2>
 						<p className="text-xl text-gray-400 leading-relaxed mb-8">
 							Existimos para erradicar la incertidumbre en el mundo digital. Nuestra misión es dotar a las

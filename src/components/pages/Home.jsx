@@ -23,7 +23,7 @@ export default function Home() {
 						</div>
 
 						<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-7xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
-							Agencia de Desarrollo Web eCommerce que convierte
+							Agencia de Diseño Web en Argentina que Convierte 
 							<br />
 							tu sitio en <span className="text-brand-lime">ventas</span>
 						</h1>
@@ -33,8 +33,8 @@ export default function Home() {
 							{/* TEXTO */}
 							<div className="md:col-span-6">
 								<p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed mb-12">
-									Somos una agencia de desarrollo web eCommerce en Argentina especializada en crear tiendas online profesionales orientadas a ventas reales. <br />
-									Diseñamos sitios con arquitectura comercial, <span className="text-white font-medium italic underline decoration-brand-lime">
+									Somos una agencia de diseño web web eCommerce en Argentina especializada en crear tiendas online profesionales orientadas a ventas reales. <br />
+									Diseñamos sitios web con arquitectura comercial, <span className="text-white font-medium italic underline decoration-brand-lime">
 										enfoque estratégico y SEO técnico para ecommerce</span> desde el primer día para posicionar y convertir.
 								</p>
 
@@ -328,7 +328,7 @@ export default function Home() {
 			<section className="py-32 bg-brand-black border-b border-brand-border">
 				<div className="container mx-auto px-6">
 					<h2 className="font-display text-4xl font-bold text-white uppercase mb-20">
-						Anatomía de tu nueva Web
+						Anatomía de tu nuevo sitio web
 					</h2>
 
 					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border border-brand-border">
@@ -466,7 +466,7 @@ export default function Home() {
 								04
 							</span>
 							<h4 className="text-xl font-bold text-gray-400 group-hover:text-white uppercase transition-colors">
-								Diseño UX/UI de Alta Fidelidad
+								Diseño web UX/UI de Alta Fidelidad
 							</h4>
 						</div>
 						<div className="group border-b border-brand-border pb-6 flex gap-10 items-center hover:pl-6 transition-all">
