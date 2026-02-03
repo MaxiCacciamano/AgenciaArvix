@@ -217,7 +217,8 @@ export const Proyectos = () => {
 					</h2>
 					<div class="flex flex-col md:flex-row gap-6 justify-center">
 						<a
-							href="index.html#contacto"
+							href="https://wa.me/543532679392?text=Hola%20quiero%20cotizar%20mi%20pagina%20web
+"
 							class="flex items-center justify-center gap-3 bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform"
 						>
 							Cotizar Página Web
