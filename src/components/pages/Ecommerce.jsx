@@ -95,8 +95,8 @@ export const Ecommerce = () => {
                             Trabajamos con Shopify, WooCommerce, Tiendanube y soluciones a medida para marcas que buscan escalar ventas.
                         </p>
                         <div className="flex flex-wrap gap-4">
-                            <a href="#soluciones" className="inline-flex gap-3 bg-brand-lime text-black px-8 py-5 font-bold uppercase text-xs tracking-widest hover:-translate-y-1 hover:bg-brand-lime transition-all">Hablar con un especialista <ChevronRight className="w-4 h-4" /></a>
-                            <a href="#remodelacion" className="border border-brand-border text-white px-8 py-5 font-bold uppercase text-xs tracking-widest hover:bg-white/5 transition-all">Quiero mejorar mi tienda</a>
+                            <a className="inline-flex gap-3 bg-brand-lime text-black px-8 py-5 font-bold uppercase text-xs tracking-widest hover:-translate-y-1 hover:bg-brand-lime transition-all">Hablar con un especialista <ChevronRight className="w-4 h-4" /></a>
+                            <a className="border border-brand-border text-white px-8 py-5 font-bold uppercase text-xs tracking-widest hover:bg-white/5 transition-all">Quiero mejorar mi tienda</a>
                         </div>
                     </div>
                 </div>

@@ -23,7 +23,7 @@ export default function Home() {
 						</div>
 
 						<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-7xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
-							Agencia de Diseño Web en Argentina que Convierte 
+							Agencia de Diseño Web en Argentina que Convierte
 							<br />
 							tu sitio en <span className="text-brand-lime">ventas</span>
 						</h1>
@@ -585,13 +585,16 @@ export default function Home() {
 									</div>
 								</div>
 								<div className="text-right">
-									<Link to="/Contacto">
-										<a
+									<Link to="/Contacto"
+										aria-label="Ir a la página de contacto"
+										className="inline-block bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest"
+									>
+										{/* <a
 											href="#contacto"
 											className="inline-block bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:bg-white transition-all w-full md:w-auto text-center"
-										>
+										> */}
 											Iniciar Ahora
-										</a>
+										{/* </a> */}
 									</Link>
 								</div>
 							</div>
