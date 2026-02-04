@@ -3,382 +3,305 @@ import { Menu } from '../Menu.jsx';
 import { Footer } from '../Footer.jsx';
 import { Link } from 'react-router-dom';
 
-import { Mail, Search, ArrowRight, ChevronRight } from 'lucide-react';
+import { Mail, Search, ArrowRight, ChevronRight, Zap, ShieldCheck, AlertCircle, TrendingDown, Clock,  CheckCircle } from 'lucide-react';
 
 import imghome from '../../../public/img/tienda.png';
 
 export default function Home() {
 	return (
-		<div className="relative w-full min-h-screen bg-brand-black text-brand-white antialiased selection:bg-brand-lime selection:text-black overflow-x-hidden font-sans">
-			<div className="noise-overlay" />
-			<Menu />
+<div className="relative w-full min-h-screen bg-brand-black text-brand-white antialiased selection:bg-brand-lime selection:text-black overflow-x-hidden font-sans">
+            <div className="noise-overlay" />
+            <Menu />
 
-			<header className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden border-b border-brand-border grid-bg ">
-				<div className="container mx-auto px-6 relative z-10">
-					<div className="max-w-6xl">
-						<div className="inline-flex items-center gap-2 border border-brand-lime/30 bg-brand-lime/5 px-4 py-1.5 mb-10 rounded-full">
-							<span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.2em]">
-								Ecommerce de Alto Rendimiento
-							</span>
-						</div>
+            {/* HEADER: Foco en KW Principal "Agencia de Diseño Web" */}
+            <header className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden border-b border-brand-border grid-bg ">
+                <div className="container mx-auto px-6 relative z-10">
+                    <div className="max-w-6xl">
+                        <div className="inline-flex items-center gap-2 border border-brand-lime/30 bg-brand-lime/5 px-4 py-1.5 mb-10 rounded-full">
+                            {/* Microcopy: Refuerza autoridad, pero no es H1 */}
+                            <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.2em]">
+                                Líderes en Desarrollo Digital • ARG / LATAM
+                            </span>
+                        </div>
 
-						<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-7xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
-							Agencia de Diseño Web en Argentina que Convierte
-							<br />
-							tu sitio en <span className="text-brand-lime">ventas</span>
-						</h1>
+                        {/* H1: OPTIMIZADO. KW Principal + Modificador Local */}
+                        <h1 className="font-display font-bold text-5xl md:text-8xl lg:text-7xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
+                            Agencia de Diseño Web <br className="hidden md:block"/>
+                            en Argentina <br className="hidden md:block"/>
+                            {/* que<span className="text-brand-lime">diseña ventas.</span> */}
+                        </h1>
 
+                        <div className="grid md:grid-cols-0 gap-0 items-center">
+                            <div className="md:col-span-6">
+                                {/* P: Uso de variantes semánticas (LSI) */}
+                                <p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed mb-12">
+                                    Creamos páginas web profesionales que funcionan como activos financieros. 
+                                    Más que una agencia creativa, somos tu socio estratégico en arquitectura digital, 
+                                    fusionando <span className="text-white font-medium italic underline decoration-brand-lime">
+                                    estética premium y rendimiento técnico</span> para posicionar tu marca sobre la competencia.
+                                </p>
 
-						<div className="grid md:grid-cols-0 gap-0 items-center">
-							{/* TEXTO */}
-							<div className="md:col-span-6">
-								<p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed mb-12">
-									Somos una agencia de diseño web web eCommerce en Argentina especializada en crear tiendas online profesionales orientadas a ventas reales. <br />
-									Diseñamos sitios web con arquitectura comercial, <span className="text-white font-medium italic underline decoration-brand-lime">
-										enfoque estratégico y SEO técnico para ecommerce</span> desde el primer día para posicionar y convertir.
-								</p>
+                                <div className="flex flex-col sm:flex-row gap-4 mb-16">
+                                    {/* CTA Principal: Enfocado a la acción general */}
+                                    <a
+                                        href="https://wa.me/5491123456789?text=Hola%20quiero%20consultar%20por%20el%20diseño%20de%20mi%20sitio%20web"
+                                        className="bg-brand-lime text-black px-[4.5rem] py-[1.5rem] font-black uppercase tracking-widest text-sm hover:-translate-y-1 transition-all shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)] flex items-center justify-center gap-3"
+                                    >
+                                        Cotizar Desarrollo Web
+                                        <ChevronRight className="w-4 h-4" />
+                                    </a>
+                                </div>
 
+                                {/* Trust Signals con Keywords de Soporte */}
+                                <div className="flex flex-wrap gap-x-8 gap-y-4">
+                                    <div className="flex items-center gap-3">
+                                        <Search className="w-5 h-5 text-brand-lime" />
+                                        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                                            Auditoría de Mercado
+                                        </span>
+                                    </div>
 
-								<div className="flex flex-col sm:flex-row gap-4 mb-16">
-									<a
-										href="https://wa.me/5491123456789?text=Hola%20quiero%20consultar%20sus%20servicios"
-										className="bg-brand-lime text-black px-[4.5rem] py-[1.5rem] font-black uppercase tracking-widest text-sm hover:-translate-y-1 transition-all shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)] flex items-center justify-center gap-3"
-									>
-										Solicitar Diagnóstico SEO y Auditoría de Tienda
-										<ChevronRight className="w-4 h-4" />
-									</a>
-								</div>
+                                    <div className="flex items-center gap-3">
+                                        <Zap className="w-5 h-5 text-brand-lime" />
+                                        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                                            Sitios Web Rápidos
+                                        </span>
+                                    </div>
 
-								<div className="flex flex-wrap gap-x-8 gap-y-4">
-									<div className="flex items-center gap-3">
-										<Search className="w-5 h-5 text-brand-lime" />
+                                    <div className="flex items-center gap-3">
+                                        <ShieldCheck className="w-5 h-5 text-brand-lime" />
+                                        <span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
+                                            Desarrollo a Medida
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
 
-										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-											Benchmark Competitivo
-										</span>
-									</div>
+                            {/* IMAGEN DECORATIVA (Glow mantenido) */}
+                            <div className="hidden md:block md:col-span-10 relative">
+                                <div className="absolute -inset-10 bg-brand-lime/10 blur-3xl -z-10" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-									<div className="flex items-center gap-3">
-										<i data-lucide="zap" className="w-5 h-5 text-brand-lime" />
-										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-											SEO Técnico Nativo
-										</span>
-									</div>
+                {/* SOCIAL PROOF / BARRA INFERIOR */}
+                <div className="absolute inset-x-0 bottom-0 w-full border-t border-brand-border py-6 bg-brand-black/80 backdrop-blur-sm pointer-events-auto">
+                    <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
+                        <div className="flex items-center gap-6 opacity-30 grayscale contrast-125">
+                            <span className="font-display font-black text-xl italic tracking-tighter">TECHCORP</span>
+                            <span className="font-display font-black text-xl italic tracking-tighter">MODA.BA</span>
+                            <span className="font-display font-black text-xl italic tracking-tighter">GLOBAL_S</span>
+                        </div>
+                        <div className="flex items-center gap-4 border-l border-brand-border pl-8">
+                             <div className="flex -space-x-2">
+                                <div className="w-8 h-8 rounded-full bg-brand-gray border border-brand-border" />
+                                <div className="w-8 h-8 rounded-full bg-brand-gray border border-brand-border" />
+                            </div>
+                            <p className="text-[10px] text-gray-500 uppercase font-bold leading-tight">
+                                “La mejor inversión en <br />
+                                infraestructura digital.” — <span className="text-white">CEO TechCorp</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </header>
 
-									<div className="flex items-center gap-3">
-										<i data-lucide="shield-check" className="w-5 h-5 text-brand-lime" />
-										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-											30 Días de Optimización
-										</span>
-									</div>
-								</div>
-							</div>
+            {/* SECCIÓN 2: EL PROBLEMA (Intención Informativa) */}
+            <section className="py-32 bg-brand-black border-b border-brand-border relative z-10">
+                <div className="container mx-auto px-6">
+                    <div className="max-w-4xl mx-auto text-center mb-24">
+                        <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">
+                            Diagnóstico Digital
+                        </span>
+                        {/* H2: Ataca la intención del usuario buscando soluciones */}
+                        <h2 className="font-display text-5xl md:text-6xl font-bold uppercase text-white mb-8 leading-tight">
+                            ¿Por qué la mayoría de las <br />
+                            <span className="text-brand-lime italic">páginas web fracasan?</span>
+                        </h2>
+                        <p className="text-gray-500 text-base max-w-2xl mx-auto mb-16">
+                            En el mercado actual, tener un "sitio lindo" no es suficiente. Sin una estrategia de 
+                            **desarrollo web** orientada a la conversión y una arquitectura técnica sólida, 
+                            tu página es invisible para Google.
+                        </p>
+                    </div>
 
-							{/* IMAGEN */}
-							<div className="hidden md:block md:col-span-10 relative">
-								{/* <img
-									src={imghome}
-									alt="Desarrollo ecommerce estratégico orientado a ventas"
-									className="w-[90%] h-auto object-contain"
-									loading="lazy"
-								/> */}
+                    <div className="grid md:grid-cols-3 gap-8">
+                        {/* Tarjetas de problemas - Optimizadas semánticamente */}
+                        <div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
+                            <AlertCircle className="w-8 h-8 text-red-500 mb-6" />
+                            <h3 className="text-white font-display font-bold text-xl uppercase mb-4">
+                                Diseño sin Estrategia
+                            </h3>
+                            <p className="text-gray-500 text-sm leading-relaxed">
+                                Plantillas genéricas que no reflejan tu marca. Un sitio web profesional debe ser 
+                                diseñado pensando en el recorrido de compra de tu cliente.
+                            </p>
+                        </div>
+                        <div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
+                            <TrendingDown className="w-8 h-8 text-red-500 mb-6" />
+                            <h3 className="text-white font-display font-bold text-xl uppercase mb-4">
+                                Mala Experiencia Móvil
+                            </h3>
+                            <p className="text-gray-500 text-sm leading-relaxed">
+                                Si tu **página web** no carga rápido y no se ve perfecta en celulares, estás perdiendo tráfico.
+                                Priorizamos el desarrollo *mobile-first*.
+                            </p>
+                        </div>
+                        <div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
+                            <Clock className="w-8 h-8 text-red-500 mb-6" />
+                            <h3 className="text-white font-display font-bold text-xl uppercase mb-4">
+                                Código Obsoleto
+                            </h3>
+                            <p className="text-gray-500 text-sm leading-relaxed">
+                                Webs lentas hechas con tecnologías antiguas. Usamos stacks modernos (React, Next.js) 
+                                que garantizan velocidad y escalabilidad.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-								{/* Glow decorativo */}
-								<div className="absolute -inset-10 bg-brand-lime/10 blur-3xl -z-10" />
-							</div>
-						</div>
-					</div>
-				</div>
+            {/* SECCIÓN 3: LA SOLUCIÓN - Keyword Secundaria "Desarrollo de sitios web" */}
+            <section id="solucion" className="py-32 bg-brand-gray/20 border-b border-brand-border relative z-10 overflow-hidden">
+                <div className="container mx-auto px-6">
+                    <div className="flex flex-col lg:flex-row gap-20 items-center">
+                        <div className="lg:w-1/2">
+                            <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">
+                                La Solución Integral
+                            </span>
+                            {/* H2: Variación semántica fuerte + Tu Copy de ventas */}
+                            <h2 className="font-display text-5xl md:text-7xl font-bold uppercase text-white mb-10 leading-none">
+                                Desarrollo de Sitios Web <br />
+                                con <span className="text-brand-lime">Ingeniería Comercial.</span>
+                            </h2>
+                            <p className="text-xl text-gray-400 mb-10 leading-relaxed">
+                                No solo "hacemos webs". Como **empresa de desarrollo web**, aplicamos un método riguroso.
+                                Investigamos a tu competencia y diseñamos una arquitectura de información persuasiva 
+                                para asegurar que tu sitio sea tu mejor vendedor 24/7.
+                            </p>
+                            
+                            <ul className="space-y-6">
+                                <li className="flex items-start gap-4">
+                                    <div className="mt-1 bg-brand-lime p-1 rounded-sm">
+                                        <CheckCircle className="w-3 h-3 text-black" />
+                                    </div>
+                                    <div>
+                                        <span className="block text-white font-bold uppercase text-xs tracking-wider">
+                                            Benchmark Competitivo
+                                        </span>
+                                        <p className="text-gray-500 text-sm">
+                                            Entendemos qué hacen los líderes de tu nicho para superarlos.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="flex items-start gap-4">
+                                    <div className="mt-1 bg-brand-lime p-1 rounded-sm">
+                                        <CheckCircle className="w-3 h-3 text-black" />
+                                    </div>
+                                    <div>
+                                        <span className="block text-white font-bold uppercase text-xs tracking-wider">
+                                            Arquitectura Escalable
+                                        </span>
+                                        <p className="text-gray-500 text-sm">
+                                            Sitios preparados para escalar: integraciones con CRM, ERP y herramientas de marketing.
+                                        </p>
+                                    </div>
+                                </li>
+                                <li className="flex items-start gap-4">
+                                    <div className="mt-1 bg-brand-lime p-1 rounded-sm">
+                                        <CheckCircle className="w-3 h-3 text-black" />
+                                    </div>
+                                    <div>
+                                        <span className="block text-white font-bold uppercase text-xs tracking-wider">
+                                            Diseño Web Orientado a Resultados
+                                        </span>
+                                        <p className="text-gray-500 text-sm">
+                                            Creamos interfaces donde la estética está al servicio de la rentabilidad.
+                                        </p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div className="lg:w-1/2 relative">
+                             {/* Mismo componente visual de Benchmark */}
+                            <div className="aspect-square border border-brand-lime/20 flex items-center justify-center p-12">
+                                <div className="w-full h-full border border-brand-border relative overflow-hidden group">
+                                    <div className="absolute inset-0 bg-brand-lime/5 group-hover:bg-brand-lime/10 transition-all" />
+                                    <div className="p-8">
+                                        <span className="block text-[10px] font-bold text-brand-lime uppercase tracking-widest mb-4">
+                                            Web Performance Score
+                                        </span>
+                                        <div className="space-y-4">
+                                            <div className="h-2 w-full bg-brand-border rounded" />
+                                            <div className="h-2 w-3/4 bg-brand-border rounded" />
+                                            <div className="h-2 w-1/2 bg-brand-lime/50 rounded" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-				{/* BARRA INFERIOR */}
-				<div className="absolute inset-x-0 bottom-0 w-full border-t border-brand-border py-6 bg-brand-black/80 backdrop-blur-sm">
-					<div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-						<div className="flex items-center gap-6 opacity-30 grayscale contrast-125">
-							<span className="font-display font-black text-xl italic tracking-tighter">TECHCORP</span>
-							<span className="font-display font-black text-xl italic tracking-tighter">MODA.BA</span>
-							<span className="font-display font-black text-xl italic tracking-tighter">GLOBAL_S</span>
-						</div>
+            {/* SECCIÓN 4: FEATURES - Uso de H3 para keywords long-tail */}
+            <section className="py-32 bg-brand-black border-b border-brand-border">
+                <div className="container mx-auto px-6">
+                    {/* H2 Secundario */}
+                    <h2 className="font-display text-4xl font-bold text-white uppercase mb-20">
+                        Proceso de Diseño de Páginas Web
+                    </h2>
 
-						<div className="flex items-center gap-4 border-l border-brand-border pl-8">
-							<div className="flex -space-x-2">
-								<div className="w-8 h-8 rounded-full bg-brand-gray border border-brand-border" />
-								<div className="w-8 h-8 rounded-full bg-brand-gray border border-brand-border" />
-							</div>
-
-							<p className="text-[10px] text-gray-500 uppercase font-bold leading-tight">
-								“El benchmark nos ahorró meses de
-								<br />
-								errores.” — <span className="text-white">Director en TechCorp</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</header>
-
-			{/* <header className="relative min-h-screen flex items-center pt-24 pb-32 overflow-hidden border-b border-brand-border grid-bg">
-				<div className=" py-5 container mx-auto px-6 relative z-10">
-					<div className="max-w-5xl fle">
-						<div className="inline-flex items-center gap-2 border border-brand-lime/30 bg-brand-lime/5 px-4 py-1.5 mb-10 rounded-full">
-							<span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.2em]">
-								Ecommerce de Alto Rendimiento
-							</span>
-						</div>
-
-						<h1 className="font-display font-bold text-5xl md:text-8xl lg:text-9xl leading-[0.9] text-white mb-10 tracking-tighter uppercase">
-							No creamos webs.<br />Diseñamos <span className="text-brand-lime">ventas.</span>
-						</h1>
-
-						<div className="grid md:grid-cols-12 gap-10">
-							<div className="md:col-span-7">
-								<p className="text-xl md:text-2xl text-gray-400 font-light leading-relaxed mb-12">
-									Desarrollo web estratégico con{' '}
-									<span className="text-white font-medium italic underline decoration-brand-lime">
-										investigación de mercado integrada
-									</span>. Si no sabés cómo vende tu competencia, estás perdiendo antes de empezar.
-								</p>
-
-								<div className="flex flex-col sm:flex-row gap-4 mb-16">
-									<a
-										href="https://wa.me/5491123456789?text=Hola%20quiero%20consultar%20sus%20servicios"
-										className="bg-brand-lime text-black px-[4.5rem] py-[1.5rem] font-black uppercase tracking-widest text-sm hover:-translate-y-1 transition-all shadow-[0_10px_30px_-10px_rgba(204,255,0,0.3)] flex items-center justify-center gap-3"
-									>
-										Solicitar Diagnóstico <i data-lucide="arrow-right" className="w-4 h-4" />
-									</a>
-								</div>
-
-								<div className="flex flex-wrap gap-y-3">
-									<div className="flex items-center gap-3">
-										<i data-lucide="search" className="w-5 h-5 text-brand-lime" />
-										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-											Benchmark Competitivo
-										</span>
-									</div>
-									<div className="flex items-center gap-3">
-										<i data-lucide="zap" className="w-5 h-5 text-brand-lime" />
-										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-											SEO Técnico Nativo
-										</span>
-									</div>
-									<div className="flex items-center gap-3">
-										<i data-lucide="shield-check" className="w-5 h-5 text-brand-lime" />
-										<span className="text-[10px] font-bold uppercase tracking-widest text-gray-400">
-											30 Días de Optimización
-										</span>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div className="absolute inset-x-0 bottom-0 w-full border-t border-brand-border py-6 bg-brand-black/80 backdrop-blur-sm pointer-events-auto">
-					<div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-8">
-						<div className="flex items-center gap-6 opacity-30 grayscale contrast-125">
-							<span className="font-display font-black text-xl italic tracking-tighter">TECHCORP</span>
-							<span className="font-display font-black text-xl italic tracking-tighter">MODA.BA</span>
-							<span className="font-display font-black text-xl italic tracking-tighter">GLOBAL_S</span>
-						</div>
-						<div className="flex items-center gap-4 border-l border-brand-border pl-8">
-							<div className="flex -space-x-2">
-								<div className="w-8 h-8 rounded-full bg-brand-gray border border-brand-border" />
-								<div className="w-8 h-8 rounded-full bg-brand-gray border border-brand-border" />
-							</div>
-							<p className="text-[10px] text-gray-500 uppercase font-bold leading-tight">
-								"El benchmark nos ahorró meses de <br />errores." —{' '}
-								<span className="text-white">Director en TechCorp</span>
-							</p>
-						</div>
-					</div>
-				</div>
-			</header> */}
-
-			<section className="py-32 bg-brand-black border-b border-brand-border relative z-10">
-				<div className="container mx-auto px-6">
-					<div className="max-w-4xl mx-auto text-center mb-24">
-						<span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">
-							Diagnóstico de Mercado
-						</span>
-						<h2 className="font-display text-5xl md:text-6xl font-bold uppercase text-white mb-8 leading-tight">
-							Tu sitio web es un<br />
-							activo invisible <span className="text-brand-lime italic">en un mar de ruido.</span>
-						</h2>
-						<p className="text-gray-500 text-base max-w-2xl mx-auto mb-16">
-							Sin una estrategia de desarrollo web ecommerce y posicionamiento en buscadores, incluso una tienda online bien diseñada puede volverse invisible frente a la competencia.
-						</p>
-					</div>
-
-					<div className="grid md:grid-cols-3 gap-8">
-						<div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
-							<i data-lucide="alert-circle" className="w-8 h-8 text-red-500 mb-6" />
-							<h3 className="text-white font-display font-bold text-xl uppercase mb-4">
-								Sin benchmark competitivo
-							</h3>
-							<p className="text-gray-500 text-sm leading-relaxed">
-								Si solo copiás plantillas de otros sin una estrategia de mercado, estás operando a ciegas.
-								Sin un benchmark competitivo profundo, no entendés por qué los líderes de tu nicho venden y vos no. Estás perdiendo antes de empezar.
-							</p>
-						</div>
-						<div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
-							<i data-lucide="trending-down" className="w-8 h-8 text-red-500 mb-6" />
-							<h3 className="text-white font-display font-bold text-xl uppercase mb-4">
-								Fallas en la arquitectura de ventas
-							</h3>
-							<p className="text-gray-500 text-sm leading-relaxed">
-								Mucho tráfico, cero resultados. Tu diseño puede ser "lindo",
-								pero si carece de ingeniería comercial e interfaces de alta fidelidad,
-								no guía al usuario hacia la transacción final. Tu sitio es un laberinto, no un embudo de conversión.
-							</p>
-						</div>
-						<div className="p-10 border border-brand-border bg-brand-gray/30 hover:bg-brand-gray/50 transition-all">
-							<i data-lucide="clock" className="w-8 h-8 text-red-500 mb-6" />
-							<h3 className="text-white font-display font-bold text-xl uppercase mb-4">
-								Deficiencia en SEO técnico nativo
-							</h3>
-							<p className="text-gray-500 text-sm leading-relaxed">
-								Cada segundo que tu plataforma tarda en cargar, perdés un 20% de tus clientes potenciales.
-								Sin una infraestructura de desarrollo web estratégico y SEO técnico nativo, Google te ignora y tus clientes huyen hacia la competencia.
-							</p>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section
-				id="solucion"
-				className="py-32 bg-brand-gray/20 border-b border-brand-border relative z-10 overflow-hidden"
-			>
-				<div className="container mx-auto px-6">
-					<div className="flex flex-col lg:flex-row gap-20 items-center">
-						<div className="lg:w-1/2">
-							<span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">
-								La Solución
-							</span>
-							<h2 className="font-display text-5xl md:text-7xl font-bold uppercase text-white mb-10 leading-none">
-								Ingeniería<br />Comercial.
-							</h2>
-							<p className="text-xl text-gray-400 mb-10 leading-relaxed">
-								No somos simplemente una agencia creativa; somos arquitectos de ventas, aplicamos un{' '}
-								<span className="text-white font-bold">Método Riguroso</span> basado en datos reales para potenciar tu negocio en Google.
-								Investigamos a tus 5 competidores más fuertes antes de diseñar tu arquitectura de ventas dentro del desarrollo de tu tienda online profesional,
-								asegurando que tu inversión se transforme en un activo financiero.
-							</p>
-							<ul className="space-y-6">
-								<li className="flex items-start gap-4">
-									<div className="mt-1 bg-brand-lime p-1 rounded-sm">
-										<i data-lucide="check" className="w-3 h-3 text-black" />
-									</div>
-									<div>
-										<span className="block text-white font-bold uppercase text-xs tracking-wider">
-											Benchmark Competitivo
-										</span>
-										<p className="text-gray-500 text-sm">
-											Entendemos qué hacen bien (y mal) los líderes de tu nicho.
-										</p>
-									</div>
-								</li>
-								<li className="flex items-start gap-4">
-									<div className="mt-1 bg-brand-lime p-1 rounded-sm">
-										<i data-lucide="check" className="w-3 h-3 text-black" />
-									</div>
-									<div>
-										<span className="block text-white font-bold uppercase text-xs tracking-wider">
-											Arquitectura Escalable
-										</span>
-										<p className="text-gray-500 text-sm">
-											Desarrollamos sitios web de alto rendimiento preparados para recibir miles de visitas sin colapsar.
-										</p>
-									</div>
-								</li>
-								<li className="flex items-start gap-4">
-									<div className="mt-1 bg-brand-lime p-1 rounded-sm">
-										<i data-lucide="check" className="w-3 h-3 text-black" />
-									</div>
-									<div>
-										<span className="block text-white font-bold uppercase text-xs tracking-wider">
-											DISEÑO WEB ORIENTADO A RESULTADOS
-										</span>
-										<p className="text-gray-500 text-sm">
-											Creamos interfaces donde la estética está al servicio de la rentabilidad y la conversión.
-										</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-						<div className="lg:w-1/2 relative">
-							<div className="aspect-square border border-brand-lime/20 flex items-center justify-center p-12">
-								<div className="w-full h-full border border-brand-border relative overflow-hidden group">
-									<div className="absolute inset-0 bg-brand-lime/5 group-hover:bg-brand-lime/10 transition-all" />
-									<div className="p-8">
-										<span className="block text-[10px] font-bold text-brand-lime uppercase tracking-widest mb-4">
-											Competitive Analysis 1.0
-										</span>
-										<div className="space-y-4">
-											<div className="h-2 w-full bg-brand-border rounded" />
-											<div className="h-2 w-3/4 bg-brand-border rounded" />
-											<div className="h-2 w-1/2 bg-brand-lime/50 rounded" />
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<section className="py-32 bg-brand-black border-b border-brand-border">
-				<div className="container mx-auto px-6">
-					<h2 className="font-display text-4xl font-bold text-white uppercase mb-20">
-						Anatomía de tu nuevo sitio web
-					</h2>
-
-					<div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border border-brand-border">
-						<div className="p-10 border-r border-b lg:border-b-0 border-brand-border hover:bg-white hover:text-black transition-all group">
-							<span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
-								01 / Investigación
-							</span>
-							<h3 className="text-xl font-display font-bold uppercase mb-4">Benchmark</h3>
-							<ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
-								<li>• Audit de 5 competidores</li>
-								<li>• Análisis de flujos de pago</li>
-								<li>• Mapa de oportunidades</li>
-							</ul>
-						</div>
-						<div className="p-10 border-r border-b lg:border-b-0 border-brand-border hover:bg-white hover:text-black transition-all group">
-							<span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
-								02 / Diseño
-							</span>
-							<h3 className="text-xl font-display font-bold uppercase mb-4">UX/UI Pro</h3>
-							<ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
-								<li>• Interfaces de conversión</li>
-								<li>• Mobile-First nativo</li>
-								<li>• Branding Coherente</li>
-							</ul>
-						</div>
-						<div className="p-10 border-r border-b md:border-b-0 border-brand-border hover:bg-white hover:text-black transition-all group">
-							<span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
-								03 / Tech
-							</span>
-							<h3 className="text-xl font-display font-bold uppercase mb-4">Desarrollo</h3>
-							<ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
-								<li>• Código Limpio</li>
-								<li>• Integración de CRM/ERP</li>
-								<li>• Velocidad de carga A+</li>
-							</ul>
-						</div>
-						<div className="p-10 hover:bg-white hover:text-black transition-all group">
-							<span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
-								04 / Posicionamiento
-							</span>
-							<h3 className="text-xl font-display font-bold uppercase mb-4">SEO Técnico</h3>
-							<ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
-								<li>• Estructura de Datos</li>
-								<li>• Core Web Vitals</li>
-								<li>• Indexación Express</li>
-							</ul>
-						</div>
-					</div>
-				</div>
-			</section>
+                    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-0 border border-brand-border">
+                        {/* Box 1 */}
+                        <div className="p-10 border-r border-b lg:border-b-0 border-brand-border hover:bg-white hover:text-black transition-all group">
+                            <span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
+                                01 / Investigación
+                            </span>
+                            <h3 className="text-xl font-display font-bold uppercase mb-4">Análisis de Mercado</h3>
+                            <ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
+                                <li>• Benchmark competitivo</li>
+                                <li>• Buyer Persona</li>
+                            </ul>
+                        </div>
+                        {/* Box 2 */}
+                        <div className="p-10 border-r border-b lg:border-b-0 border-brand-border hover:bg-white hover:text-black transition-all group">
+                            <span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
+                                02 / Diseño
+                            </span>
+                            <h3 className="text-xl font-display font-bold uppercase mb-4">Diseño UI/UX</h3>
+                            <ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
+                                <li>• Interfaces de conversión</li>
+                                <li>• Mobile-First nativo</li>
+                            </ul>
+                        </div>
+                        {/* Box 3 */}
+                        <div className="p-10 border-r border-b md:border-b-0 border-brand-border hover:bg-white hover:text-black transition-all group">
+                            <span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
+                                03 / Código
+                            </span>
+                            <h3 className="text-xl font-display font-bold uppercase mb-4">Desarrollo Frontend</h3>
+                            <ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
+                                <li>• React / Next.js</li>
+                                <li>• Código Limpio</li>
+                            </ul>
+                        </div>
+                        {/* Box 4 */}
+                        <div className="p-10 hover:bg-white hover:text-black transition-all group">
+                            <span className="block text-xs font-bold uppercase tracking-widest mb-6 text-brand-lime group-hover:text-black">
+                                04 / Lanzamiento
+                            </span>
+                            <h3 className="text-xl font-display font-bold uppercase mb-4">Optimización Técnica</h3>
+                            <ul className="text-[11px] space-y-2 uppercase tracking-wide opacity-70">
+                                <li>• Core Web Vitals</li>
+                                <li>• Indexación Express</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
 			<section className="py-32 bg-brand-gray/10 relative z-10">
 				<div className="container mx-auto px-6">
