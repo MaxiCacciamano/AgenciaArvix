@@ -115,13 +115,13 @@ export default function Home() {
                             Diagnóstico Digital
                         </span>
                         {/* H2: Ataca la intención del usuario buscando soluciones */}
-                        <h2 className="font-display text-5xl md:text-6xl font-bold uppercase text-white mb-8 leading-tight">
+                        <h2 className="font-display text-5xl md:text-5xl font-bold uppercase text-white mb-8 leading-tight">
                             ¿Por qué la mayoría de las <br />
                             <span className="text-brand-lime italic">páginas web fracasan?</span>
                         </h2>
                         <p className="text-gray-500 text-base max-w-2xl mx-auto mb-16">
                             En el mercado actual, tener un "sitio lindo" no es suficiente. Sin una estrategia de 
-                            **desarrollo web** orientada a la conversión y una arquitectura técnica sólida, 
+                            desarrollo web orientada a la conversión y una arquitectura técnica sólida, 
                             tu página es invisible para Google.
                         </p>
                     </div>
@@ -171,9 +171,9 @@ export default function Home() {
                                 La Solución Integral
                             </span>
                             {/* H2: Variación semántica fuerte + Tu Copy de ventas */}
-                            <h2 className="font-display text-5xl md:text-7xl font-bold uppercase text-white mb-10 leading-none">
-                                Desarrollo de Sitios Web <br />
-                                con <span className="text-brand-lime">Ingeniería Comercial.</span>
+                            <h2 className="font-display text-5xl md:text-6xl font-bold uppercase text-white mb-10 leading-none">
+                                Desarrollo de Sitios Web con<br />
+                                 <span className="text-brand-lime">Ingeniería Comercial.</span>
                             </h2>
                             <p className="text-xl text-gray-400 mb-10 leading-relaxed">
                                 No solo "hacemos webs". Como **empresa de desarrollo web**, aplicamos un método riguroso.
