@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 export const Footer = () => {
     return (
-        <footer Name="bg-brand-black pt-24 pb-12 border-t border-brand-border">
+        <footer className="bg-brand-black pt-24 pb-12 border-t border-brand-border">
             <div className="container mx-auto px-6 py-10">
                 <div className="flex flex-col md:flex-row justify-between items-start gap-12 mb-20">
                     <div className="max-w-sm">
@@ -37,10 +37,34 @@ export const Footer = () => {
                             </ul>
                         </div>
                     </div>
+                    <div className="">
+                        <div className="">
+                            <p className="text-gray-500 text-xs mb-3 uppercase tracking-widest">
+                                ¿Tenés un proyecto en mente?
+                            </p>
+
+                            <Link
+                                to="/Contacto"
+                                className="inline-block bg-brand-lime text-black px-6 py-3 text-xs font-bold uppercase tracking-widest rounded-md hover:bg-lime-400 transition"
+                            >
+                                Pedir presupuesto
+                            </Link>
+                        </div>
+
+                        <div className='mt-6'>
+                            <Link
+                                to="/Proyectos"
+                                className="text-gray-400 text-xs uppercase tracking-widest hover:text-brand-lime transition"
+                            >
+                                Ver trabajos
+                            </Link>
+                        </div>
+                    </div>
+
                 </div>
                 <div className="space-y-8 border-t border-brand-border pt-5 flex flex-col md:flex-row justify-between items-center gap-6">
                     <span className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em]">&copy; 2025 AGENCIA DIGITAL ARGENTINA - ALL RIGHTS RESERVED.</span>
-                    <span className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em] flex items-center gap-2">MADE IN ARVIX <span class="text-brand-lime">★</span> SIN HUMO.</span>
+                    <span className="text-[10px] text-gray-600 font-bold uppercase tracking-[0.2em] flex items-center gap-2">MADE IN ARVIX <span className="text-brand-lime">★</span> SIN HUMO.</span>
                 </div>
             </div>
         </footer>
