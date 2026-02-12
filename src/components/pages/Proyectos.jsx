@@ -1,6 +1,6 @@
 import React from 'react';
-import { Menu } from '../Menu.jsx';
-import { Footer } from '../Footer.jsx';
+import { Menu } from '../Menu';
+import { Footer } from '../Footer';
 
 import Coope from '../../../public/img/Coope.png';
 import Cuaderno from '../../../public/img/Cuaderno.webp';
@@ -11,6 +11,22 @@ import { ArrowUpRight, ChevronRight, ArrowRight, Briefcase } from 'lucide-react'
 import { Link } from 'react-router-dom';
 
 export const Proyectos = () => {
+
+	// ÚNICAS ADICIONES: número y mensajes para los CTAs (solo variables)
+	const WA_PHONE = '5493532679392';
+
+	const waSio = encodeURIComponent(
+		'Hola, quiero recibir más información sobre el proyecto SIO Water y cómo podrían replicarlo para mi tienda.'
+	);
+
+	const waBurgerland = encodeURIComponent(
+		'Hola, quiero recibir más información sobre el proyecto Burgerland para el sector gastronómico.'
+	);
+
+	const waCotizar = encodeURIComponent(
+		'Hola, quiero cotizar mi página web profesional. ¿Podemos ver tiempos y presupuesto?'
+	);
+
 	return (
 		<div className="bg-brand-black text-brand-white antialiased selection:bg-brand-lime selection:text-black">
 			<div className="noise-overlay" />
@@ -88,6 +104,9 @@ export const Proyectos = () => {
 								<a
 									href="https://cooptirolesa.com.ar"
 									class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors"
+									aria-label="Ver detalles del diseño Cooperativa Colonia Tirolesa (enlace externo)"
+									target="_blank"
+									rel="noopener noreferrer"
 								>
 									Detalles del Diseño <ArrowUpRight class="w-4 h-4" />
 								</a>
@@ -121,8 +140,11 @@ export const Proyectos = () => {
 									consumo masivo, optimizando la conversión y el flujo de pedidos.
 								</p>
 								<a
-									href="#"
+									href={`https://wa.me/${WA_PHONE}?text=${waSio}`}
 									class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Solicitar información sobre SIO Water por WhatsApp"
 								>
 									Detalles del Diseño <ArrowUpRight class="w-4 h-4" />
 								</a>
@@ -157,8 +179,11 @@ export const Proyectos = () => {
 									para el sector gastronómico con foco en la experiencia del usuario (UX).
 								</p>
 								<a
-									href="#"
+									href={`https://wa.me/${WA_PHONE}?text=${waBurgerland}`}
 									class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Solicitar información sobre Burgerland por WhatsApp"
 								>
 									Detalles del Diseño <ArrowUpRight class="w-4 h-4" />
 								</a>
@@ -195,6 +220,9 @@ export const Proyectos = () => {
 								<a
 									href="https://darkgray-caterpillar-731904.hostingersite.com"
 									class="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-white group-hover:text-brand-lime transition-colors"
+									target="_blank"
+									rel="noopener noreferrer"
+									aria-label="Detalles del diseño Dr. Martin Reyes (enlace externo)"
 								>
 									Detalles del Diseño <ArrowUpRight class="w-4 h-4" />
 								</a>
@@ -217,9 +245,11 @@ export const Proyectos = () => {
 					</h2>
 					<div class="flex flex-col md:flex-row gap-6 justify-center">
 						<a
-							href="https://wa.me/543532679392?text=Hola%20quiero%20cotizar%20mi%20pagina%20web
-"
+							href={`https://wa.me/${WA_PHONE}?text=${waCotizar}`}
 							class="flex items-center justify-center gap-3 bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm hover:scale-105 transition-transform"
+							target="_blank"
+							rel="noopener noreferrer"
+							aria-label="Cotizar página web por WhatsApp"
 						>
 							Cotizar Página Web
 							<ChevronRight className="w-4 h-4" />
@@ -234,6 +264,7 @@ export const Proyectos = () => {
 		</div>
 	);
 };
+
 
 // import React from 'react';
 // import { Menu } from '../Menu.jsx';

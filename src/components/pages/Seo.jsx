@@ -4,37 +4,39 @@ import { Footer } from '../Footer';
 import { ShieldCheck, BarChart3, ChevronRight } from 'lucide-react';
 
 export const Seo = () => {
-    // REGLA CRÍTICA: La KW Principal "SEO en Argentina" solo vive en este H1.
-    // Las secundarias se distribuyen en H2 y H3 para dar contexto.
+
+    // WhatsApp Config
+    const WA_PHONE = '5493532679392';
+
+    const waSeoAudit = encodeURIComponent(
+        'Hola, necesito una estrategia de posicionamiento web para mi negocio. ¿Podemos coordinar una auditoría de visibilidad?'
+    );
 
     return (
         <div className="bg-brand-black text-brand-white antialiased selection:bg-brand-lime selection:text-black">
             <div className="noise-overlay" />
             <Menu />
-            
+
             <header className="relative pt-40 pb-20 border-b border-brand-border overflow-hidden">
                 <div className="container mx-auto px-6 relative z-10">
                     <span className="text-brand-lime text-[10px] font-black uppercase tracking-[0.3em] mb-6 block">
                         Unidad de Posicionamiento Orgánico
                     </span>
-                    
-                    {/* H1: Keyword Principal Única (Transaccional) */}
+
                     <h1 className="font-display font-bold text-6xl md:text-8xl lg:text-9xl leading-[0.85] text-white tracking-tighter uppercase mb-12">
                         SEO en<br />
                         <span className="italic text-brand-lime">Argentina.</span>
                     </h1>
 
                     <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-10">
-                        {/* Copy con Variantes Semánticas (Comercial) */}
                         <p className="text-xl md:text-2xl text-gray-400 font-light max-w-2xl leading-relaxed">
-                            Como SEO Agencia especializada, no buscamos clics vacíos. 
-                            Diseñamos estrategias de posicionamiento web de alto rendimiento para marcas que 
+                            Como SEO Agencia especializada, no buscamos clics vacíos.
+                            Diseñamos estrategias de posicionamiento web de alto rendimiento para marcas que
                             buscan dominar el mercado nacional e internacional.
                             <br /><br />
                             Desde la remodelación de arquitectura web hasta la ejecución de SEO técnico avanzado.
                         </p>
-                        
-                        {/* Tags de Categorización (Navegacional) */}
+
                         <div className="flex flex-wrap gap-4 text-[9px] font-black uppercase tracking-[0.2em]">
                             <span className="px-4 py-2 bg-brand-lime text-black font-bold">Performance</span>
                             <span className="px-4 py-2 border border-brand-border text-gray-400">Auditoría Técnica</span>
@@ -42,7 +44,7 @@ export const Seo = () => {
                         </div>
                     </div>
                 </div>
-                {/* Decoración: No indexable, evita ruido visual a Google */}
+
                 <div className="absolute -bottom-10 -left-20 text-[15rem] font-display font-black text-outline uppercase select-none pointer-events-none opacity-20">
                     RANKING
                 </div>
@@ -51,7 +53,6 @@ export const Seo = () => {
             <section id="seo-intelligence" className="py-32 bg-brand-black">
                 <div className="container mx-auto px-6">
                     <div className="mb-16">
-                        {/* H2: Keyword Secundaria (Comercial) */}
                         <h2 className="font-display text-4xl md:text-6xl font-bold uppercase text-white leading-[0.9]">
                             Consultoría de <br />
                             <span className="italic text-brand-lime">Visibilidad Estratégica.</span>
@@ -59,25 +60,32 @@ export const Seo = () => {
                     </div>
 
                     <div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4">
-                        <div className="md:col-span-4 bento-card p-8 md:p-12 relative overflow-hidden group">
-                            <div className="relative z-10 h-full flex flex-col justify-between">
-                                <div>
+						<div className="md:col-span-4 bento-card p-8 md:p-12 relative overflow-hidden group">
+							<div className="relative z-10 h-full flex flex-col justify-between">
+								<div>
+									<div className="flex items-center gap-3 mb-6">
+										<div className="w-2 h-2 rounded-full bg-brand-lime animate-pulse" />
+										<span className="text-[10px] font-black uppercase tracking-widest text-gray-400">
+											Domino de Entidades y Tópicos
+										</span>
+									</div>
                                     <h3 className="text-3xl md:text-4xl font-display font-bold uppercase text-white mb-6">
                                         Ingeniería de <span className="text-brand-lime">Posicionamiento Web</span>
                                     </h3>
                                     <p className="text-gray-500 text-1xl max-w-md leading-relaxed">
-                                        Optimizamos tu activo digital bajo estándares de SXO (Search Experience Optimization). 
-                                        Si tu objetivo es mejorar SEO de página web para captar demanda cualificada en Argentina, 
+                                        Optimizamos tu activo digital bajo estándares de SXO (Search Experience Optimization).
+                                        Si tu objetivo es mejorar SEO de página web para captar demanda cualificada en Argentina,
                                         nuestro enfoque técnico es la solución.
                                     </p>
-                                </div>
-                            </div>
-                        </div>
+								</div>
+							</div>
+
+							<div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-brand-lime/5 to-transparent pointer-events-none" />
+						</div>
 
                         <div className="md:col-span-2 bento-card p-8 flex flex-col justify-between group">
                             <BarChart3 className="w-8 h-8 text-brand-lime mb-8" />
                             <div>
-                                {/* H4 para jerarquía menor */}
                                 <h4 className="text-white font-display font-bold text-xl uppercase mb-3">
                                     ROI sobre <br />Inversión Orgánica
                                 </h4>
@@ -86,19 +94,86 @@ export const Seo = () => {
                                 </p>
                             </div>
                         </div>
-                    </div>
+
+						<div className="md:col-span-3 bento-card p-8 group">
+							<div className="flex justify-between items-start mb-8">
+								<span className="text-[10px] font-black uppercase tracking-widest text-gray-400">
+									Core Web Vitals
+								</span>
+								<ShieldCheck className="w-5 h-5 text-brand-lime" />
+							</div>
+							<div className="grid grid-cols-3 gap-4 mb-8">
+								<div className="text-center">
+									<div className="text-2xl font-display font-bold text-white">99</div>
+									<div className="text-[8px] font-black text-gray-500 uppercase mt-1">Perf</div>
+								</div>
+								<div className="text-center">
+									<div className="text-2xl font-display font-bold text-white">100</div>
+									<div className="text-[8px] font-black text-gray-500 uppercase mt-1">SEO</div>
+								</div>
+								<div className="text-center">
+									<div className="text-2xl font-display font-bold text-white">95</div>
+									<div className="text-[8px] font-black text-gray-500 uppercase mt-1">Acc</div>
+								</div>
+							</div>
+							<h4 className="text-white font-display font-bold text-lg uppercase mb-2">
+								AUDITORÍA DE SALUD WEB
+							</h4>
+							<p className="text-gray-500 text-xs">
+								El SEO moderno es velocidad. Si tu sitio web actual es lento, Google te castiga. Nuestra
+								ingeniería web garantiza una infraestructura técnica impecable.
+							</p>
+						</div>
+
+						<div className="md:col-span-3 bento-card p-8 relative overflow-hidden group">
+							<div className="relative z-10 h-full flex flex-col justify-between">
+								<div className="flex justify-between">
+									<h4 className="text-white font-display font-bold text-lg uppercase">
+										Expansión de <br />Mercados
+									</h4>
+									<div className="flex -space-x-2">
+										<div className="w-6 h-6 rounded-full border border-brand-black bg-gray-800 flex items-center justify-center text-[8px] font-bold">
+											ES
+										</div>
+										<div className="w-6 h-6 rounded-full border border-brand-black bg-gray-700 flex items-center justify-center text-[8px] font-bold">
+											EN
+										</div>
+										<div className="w-6 h-6 rounded-full border border-brand-black bg-gray-600 flex items-center justify-center text-[8px] font-bold">
+											PT
+										</div>
+									</div>
+								</div>
+								<div className="mt-8 flex items-end gap-1 h-20">
+									<div className="graph-bar w-full bg-brand-border h-[20%] group-hover:h-[40%] group-hover:bg-brand-lime" />
+									<div className="graph-bar w-full bg-brand-border h-[35%] group-hover:h-[60%] group-hover:bg-brand-lime" />
+									<div className="graph-bar w-full bg-brand-border h-[25%] group-hover:h-[55%] group-hover:bg-brand-lime" />
+									<div className="graph-bar w-full bg-brand-border h-[45%] group-hover:h-[80%] group-hover:bg-brand-lime" />
+									<div className="graph-bar w-full bg-brand-border h-[60%] group-hover:h-[100%] group-hover:bg-brand-lime" />
+									<div className="graph-bar w-full bg-brand-border h-[40%] group-hover:h-[90%] group-hover:bg-brand-lime" />
+								</div>
+								<p className="text-gray-500 text-[10px] uppercase font-bold tracking-widest mt-6">
+									Crecimiento en Indexación Internacional
+								</p>
+							</div>
+						</div>
+					</div>
+
                 </div>
             </section>
 
-            {/* CTA Final: Refuerzo de Keyword Local (Transaccional) */}
+            {/* CTA Final */}
             <footer className="bg-brand-black py-20 border-t border-brand-border">
                 <div className="container mx-auto px-6 text-center">
                     <h2 className="font-display text-4xl md:text-6xl font-black uppercase mb-12 tracking-tighter max-w-4xl mx-auto leading-none">
-                        ¿Listo para liderar el <br/>
+                        ¿Listo para liderar el <br />
                         <span className="text-brand-lime italic">SEO en Argentina?</span>
                     </h2>
+
                     <a
-                        href="https://wa.me/543532679392?text=Hola%20necesito%20una%20estrategia%20de%20posicionamiento%20web"
+                        href={`https://wa.me/${WA_PHONE}?text=${waSeoAudit}`}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Solicitar auditoría de visibilidad SEO por WhatsApp"
                         className="inline-flex items-center gap-3 bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm transition-all hover:scale-105 mb-20"
                     >
                         Solicitar Auditoría de Visibilidad
@@ -106,6 +181,7 @@ export const Seo = () => {
                     </a>
                 </div>
             </footer>
+
             <Footer />
         </div>
     );
@@ -169,7 +245,6 @@ export const Seo = () => {
 // 							<span className="italic text-brand-lime">Unit.</span>
 // 						</h2>
 // 					</div>
-
 // 					<div className="grid grid-cols-1 md:grid-cols-4 lg:grid-cols-6 gap-4">
 // 						<div className="md:col-span-4 bento-card p-8 md:p-12 relative overflow-hidden group">
 // 							<div className="relative z-10 h-full flex flex-col justify-between">

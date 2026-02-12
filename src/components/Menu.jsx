@@ -15,6 +15,7 @@ export const Menu = () => {
   }, [menuOpen]);
 
   return (
+    
     <>
       {/* --- NAV BAR PRINCIPAL (Siempre visible) --- */}
       <nav
@@ -26,7 +27,7 @@ export const Menu = () => {
         className="fixed top-0 w-full border-b border-white/10 h-20 flex items-center"
       >
         <div className="container mx-auto px-6 flex justify-between items-center w-full">
-          
+
           {/* LOGO */}
           <div className="font-display font-bold text-2xl tracking-tighter uppercase text-white relative z-[50]">
             <Link to="/" onClick={() => setMenuOpen(false)}>
@@ -41,7 +42,7 @@ export const Menu = () => {
               style={{ backgroundColor: "#0b0b0b" }}
             >
               <Link to="/Nosotros" className="hover:text-brand-lime transition-colors">Nosotros</Link>
-              
+
               {/* Dropdown Servicios Desktop */}
               <div
                 className="relative"
@@ -65,7 +66,7 @@ export const Menu = () => {
               <Link to="/Planes" className="hover:text-brand-lime transition-colors">Planes</Link>
               <Link to="/Contacto" className="hover:text-brand-lime transition-colors">Contacto</Link>
             </div>
-            
+
             <Link to="/Contacto" className="bg-brand-lime text-black px-6 py-2.5 text-[10px] font-black uppercase hover:bg-lime-400 transition-colors">
               Solicitar Diagnóstico
             </Link>
@@ -88,16 +89,15 @@ export const Menu = () => {
       {/* --- MENÚ MOBILE OVERLAY (Capa completa separada) --- */}
       {/* Usamos 'fixed inset-0' y un z-index altísimo (99999) para garantizar que tape TODO */}
       <div
-        className={`fixed inset-0 bg-black z-[99999] lg:hidden transition-transform duration-300 ease-in-out ${
-          menuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
-        style={{ 
-            backgroundColor: "#000000", // Negro puro para máximo contraste
-            height: "100dvh" // Altura dinámica para móviles modernos
-        }} 
+        className={`fixed inset-0 bg-black z-[99999] lg:hidden transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"
+          }`}
+        style={{
+          backgroundColor: "#000000", // Negro puro para máximo contraste
+          height: "100dvh" // Altura dinámica para móviles modernos
+        }}
       >
         <div className="flex flex-col h-full">
-          
+
           {/* HEADER DEL MENÚ MÓVIL (Replica la barra de navegación para dar continuidad) */}
           <div className="flex items-center justify-between px-6 h-20 border-b border-white/15 shrink-0">
             {/* Logo dentro del menú móvil */}
@@ -106,10 +106,10 @@ export const Menu = () => {
             </Link>
 
             {/* BOTÓN CERRAR (X) GRANDE Y CLARO */}
-            <button 
-                onClick={() => setMenuOpen(false)} 
-                className="text-white p-2 hover:text-brand-lime transition-colors"
-                aria-label="Cerrar menú"
+            <button
+              onClick={() => setMenuOpen(false)}
+              className="text-white p-2 hover:text-brand-lime transition-colors"
+              aria-label="Cerrar menú"
             >
               <svg xmlns="http://www.w3.org/2000/svg" className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
@@ -120,16 +120,16 @@ export const Menu = () => {
           {/* CONTENIDO SCROLLEABLE */}
           <div className="flex-1 overflow-y-auto py-8 px-8">
             <div className="flex flex-col gap-6 text-base uppercase font-bold tracking-widest text-white">
-              
+
               <Link to="/Nosotros" onClick={() => setMenuOpen(false)} className="py-2 border-b border-white/10 hover:text-brand-lime transition-colors">
                 Nosotros
               </Link>
 
               {/* Acordeón de Servicios Móvil */}
               <div className="border-b border-white/10 pb-2">
-                <button 
-                    onClick={() => setServicesOpen(!servicesOpen)} 
-                    className="flex justify-between items-center w-full py-2 hover:text-brand-lime transition-colors"
+                <button
+                  onClick={() => setServicesOpen(!servicesOpen)}
+                  className="flex justify-between items-center w-full py-2 hover:text-brand-lime transition-colors"
                 >
                   <span>Servicios</span>
                   <span className="text-xl text-brand-lime">{servicesOpen ? "−" : "+"}</span>
@@ -159,8 +159,13 @@ export const Menu = () => {
 
               {/* CTA MÓVIL */}
               <div className="pt-6">
-                <Link to="/Contacto" onClick={() => setMenuOpen(false)} className="block w-full bg-brand-lime text-black text-center py-4 font-black text-sm uppercase rounded-sm hover:bg-lime-400 transition-colors">
-                    Solicitar Diagnóstico
+                <Link to="/Contacto"
+                  aria-label="Solicitar diagnostico por whatsapp"
+                  onClick={() => setMenuOpen(false)}
+                  className="block w-full bg-brand-lime text-black text-center py-4 font-black text-sm uppercase rounded-sm hover:bg-lime-400 transition-colors"
+
+                >
+                  Solicitar Diagnóstico
                 </Link>
               </div>
             </div>

@@ -12,6 +12,14 @@ import {
 } from 'lucide-react'
 
 export const Mercado = () => {
+
+  // ÚNICA ADICIÓN: número y mensaje para el CTA (solo para el botón)
+  // No se modificó nada más en el componente excepto el href del footer.
+  const WA_PHONE = '5493532679392'
+  const waMarketIntel = encodeURIComponent(
+    'Hola, quiero solicitar un reporte preliminar de análisis de competencia digital y market intelligence para mi negocio.'
+  )
+
   return (
     <div className="relative bg-black text-white overflow-x-hidden">
       <div className="noise-overlay" />
@@ -184,7 +192,13 @@ export const Mercado = () => {
             <p class="text-gray-500 max-w-2xl mx-auto mb-12 text-lg">
                 Solicita un reporte preliminar de <span className="font-bold">Market Intelligence</span> y descubre dónde están tus mayores oportunidades de <span className="font-bold">crecimiento orgánico</span>.
             </p>
-            <a href="#contacto" className="inline-flex items-center gap-3 bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm transition-all hover:scale-105 mb-20">
+            <a
+              href={`https://wa.me/${WA_PHONE}?text=${waMarketIntel}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Solicitar análisis de competencia digital por WhatsApp"
+              className="inline-flex items-center gap-3 bg-brand-lime text-black px-12 py-6 font-black uppercase tracking-widest text-sm transition-all hover:scale-105 mb-20"
+            >
                 Iniciar Investigación
                 <ChevronRight className="w-4 h-4" />
             </a>
@@ -195,6 +209,12 @@ export const Mercado = () => {
   )
 }
 
+
+
+
+
+
+// oooooooooooooooooooooooooooooo
 
 
 // import React from 'react'
